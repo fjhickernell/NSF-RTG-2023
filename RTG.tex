@@ -39,7 +39,7 @@
 %\topskip 0.0in
 
 %  \usepackage{showkeys}
-\usepackage{color}
+\usepackage{xcolor}
 \usepackage[numbers,sort&compress]{natbib}
 \usepackage{amsmath, amssymb, latexsym, xspace}
 \usepackage{psfrag,epsfig,amsfonts,amsmath,latexsym,amsthm,amssymb,amscd,url }
@@ -102,9 +102,10 @@
 \newcommand{\cD}{{\cal D}}
 \newcommand{\cO}{{\cal O}}
 
-\newcommand{\numUG}{65\xspace}
-\newcommand{\numPhD}{21\xspace}
+\newcommand{\numUG}{33\xspace}
+\newcommand{\numPhD}{32\xspace}
 \newcommand{\numPostDoc}{5\xspace}
+\newcommand{\numjoint}{94\xspace}
 
 %%%%%%%%%%%%%%
 
@@ -164,6 +165,7 @@
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
 \newcommand{\FredNote}[1]{{\color{blue} Fred: #1}}
+\newcommand{\YuhanNote}[1]{{\color{violet} Yuhan: #1}}
 \newcommand{\bfparagraph}[1]{\paragraph{\textbf{\textup{#1}}}}
 
 \iffalse
@@ -240,31 +242,35 @@ The College of Computing develops the talent, tools, and technology to fuel a gr
 
 \section*{\color{magenta}lots of work to do; action items list:}
 
+\begin{comment}
 {\color{magenta}BUDGET NOTES: \\
 * 5 postdocs (hire 2 in 1st year, 1 in 2nd year, 2 in 3rd year); \\
 * 1-2 weeks summer salary for one PI per year - Chun in year1, others rotate after;\\
 * PhD: 2 per year = total 10;\\
-* undergrads: 6 per year -- this includes SoReMo fellows FROM MAHT (ay UG); plus SURE (summer UG); \\
+* undergrads: 6 per year -- this includes SoReMo fellows FROM MATH (AY UG); plus SURE (SUmmer UG); \\
 * Rob's I-course funding for students - TA grad student training for this course (applied data science!);\\
 * Despina's training module for student research project proposals --about 10K per year; \\
 * ... 
 }
+\end{comment}
 
 * \sout{update title of the proposal LOL} 
 
-* remove Duan from the proposal
+* \sout{remove Duan from the proposal}
 
 * \sout{add Sonja's research section draft}
 
-* rewrite and polish Sonja's research section draft.  Work-in the joint work with the discrete group.
+* \sout{rewrite and polish Sonja's research section draft.  Work-in the joint work with the discrete group.} Polish theme 2 Sonja-Hemanshu-Micheal part.
 
-* *Sonja will also add Rob in the context of I-course; Despina and Gorjana to SoReMo and training*
+* \sout{*Sonja will also add Rob in the context of I-course (grad student training for this course (applied data science!)); Despina and Gorjana to SoReMo and training* Despina's training module for student research project proposals } --about 10K per year?? this is coming out as summer salary for SPs;
 
 * Yuhan will be senior personnel in the context of SURE. 
 
 * Emphasize that our proposal includes senior, junior and NTT (teaching) faculty. 
 
-* Sonja, see line 171 \& 175 for code comments from the solicitation!!  and 189. Add KI's enterpreneurship collaborations for students and open to postdocs - which is something unique to IIT, I think. 
+* \sout{[THIS GOT LOST DURING THE SUMMER] Sonja, see line 171 \& 175 for code comments from the solicitation!!  and 189.}
+
+* Add KI's enterpreneurship collaborations for students and open to postdocs - which is something unique to IIT, I think. 
 
 * the rest of the text all needs updates, both quant and qual. :D 
 
@@ -272,12 +278,14 @@ The College of Computing develops the talent, tools, and technology to fuel a gr
 
 \section{Introduction}
 
-The majority of Chicago's population are Black or Latinx, but they hold only 14\% of the best tech jobs \cite{P33}. 
-Chicago strives to accelerate  technology and innovation in the city and beyond, guided by data, market intelligence, and trends \cite{Chicago}. Illinois Instittue of Technology (Illinois Tech) is Chicago's technology-focused research university.  Our College of Computing---which includes the Department of Applied Mathematics---ensures student success in the fast-growing fields of mathematical modeling and simulation, prediction and decision-making, computation, and data science. Our proposed Research Training Group (RTG) will grow a sophisticated and diverse talent pool for Chicago and the nation.
+The majority of Chicago's population are Black or Latine, 
+%See https://www.dictionary.com/e/latine-vs-latinx/ for why Latine is better (it mirror's Spanish language
+but they hold only 14\% of the best tech jobs \cite{P33}. 
+Chicago strives to accelerate  technology and innovation in the city and beyond, guided by data, market intelligence, and trends \cite{Chicago}. Illinois Institute of Technology (Illinois Tech) is Chicago's technology-focused research university.  Our Department of Applied Mathematics---situated in the College of Computing---ensures student success in the fast-growing fields of mathematical modeling and simulation, prediction and decision-making, computation, and data science. Our proposed Research Training Group (RTG) will grow a sophisticated and diverse talent pool for Chicago and the nation.
 
-While standard undergraduate and graduate mathematics curricula provide students with  analytical, computational, and statistical tools, these curricula generally do not help students \emph{mature} to the point that they can creatively integrate these various  tools to solve complex problems in technology, environment, finance, and biomedical science. This RTG will establish a reproducible and sustainable process for developing this needed maturity in mathematics graduate and undergraduate students and postdoctoral fellows.{\color{magenta}currently we do not substantiate these claims. return to this later.} We will accomplish this by developing new cross-disciplinary courses, updating existing courses, and integrating research experiences that cross disciplinary and institutional boundaries, and providing co-curricular activities that develop essential soft skills.  We will recruit female and underrepresented minority students into our RTG through personal connections and our partner institutions.
+While standard undergraduate and graduate mathematics curricula provide students with  analytical, computational, and statistical tools, these curricula generally do not help students \emph{mature} to the point that they can creatively integrate these various  tools to solve complex problems in technology, environment, finance, and biomedical science. This RTG will establish a reproducible and sustainable process for developing this needed maturity in mathematics graduate and undergraduate students and postdoctoral fellows.{\color{magenta}currently we do not substantiate these claims. return to this later.} We will accomplish this by developing new cross-disciplinary courses, updating existing courses, and integrating research experiences that cross disciplinary and institutional boundaries, and providing co-curricular activities that develop essential soft skills.  \FredNote{We need to hint what will be subtracted.  We cannot just add more.}We will recruit female and underrepresented minority students into our RTG through personal connections and our partner institutions.
 
-The foundation of our training will be random sampling, statistical inference, and dynamics, and how mathematical foundations for these elements interact and are applied in data science. 
+The  foundation???? of our training will be random sampling, statistical inference, and dynamics, and how mathematical foundations for these elements interact and are applied in data science. 
 %\emph{complex dynamical systems}.  These dynamical systems may be subject to random influences \cite{Arnold, DuanBook2015}, far from equilibrium \cite{liu2009introduction}, or operate in quantum regimes \cite{Dittrich2016}. Our approaches for understanding them may be particle based (trajectory and sample path)  or continua based (probability density, ensemble, energy, action functional, and wave).  Our training in leading edge mathematical and computational tools will introduce students to a spectrum of application areas that are fundamental to current scientific and technological progress, such as geophysical and climate systems, liquid crystals, multi-phase flows, ionic fluids,  transportation systems, sensor networks, financial market risk, and biochemical reaction systems.
 Sampling is used in .... {\color{magenta}pull in 2 of 3 themes}, Inference plays out in ....  Dynamical systems may be subject to random influences \cite{Arnold, DuanBook2015}, far from equilibrium \cite{liu2009introduction}, or operate in quantum regimes \cite{Dittrich2016}. 
 Students and postdocs trained under the propose project will master theoretical and computational concepts behind these tools, and get exposure to cutting-edge spectrum of application areas fundamental to current scientific and technological progress: geophysical and climate systems, liquid crystals, multi-phase flows, ionic fluids,  transportation systems, sensor networks, financial market risk, social networks, socially responsible economic and infrastructure modeling, and biochemical reaction systems. 
@@ -285,12 +293,14 @@ Students and postdocs trained under the propose project will master theoretical 
 \subsection*{Academic Environment} The PIs are five Illinois Tech applied mathematics faculty:  %Jinqiao Duan\marginpar{remove Duan from the proposal start-finish; read through.}, 
 Fred Hickernell, Xiaofan Li, Chun Liu, Sonja Petrovi\'c, and Ming Zhong. This RTG builds on the PIs' research expertise and our Illinois Tech applied mathematics curriculum. {\color{magenta}will come back to edit this and tighten}  The research portfolio of our department covers a broad range of applied mathematics and statistics, and includes topics germane to this RTG, including dynamical systems, stochastic dynamical systems, multiscale and variational methods,  Monte Carlo methods, foundations of computational mathematics, and data-driven predictive modeling and simulation. Our work has applications in the physical, chemical, geophysical, biophysical, and materials sciences, as well as in finance. The PIs include present an past departmental, college, and university leadership.   Thus, we expect to persuade the bulk of our department to participate in this RTG in some capacity, whether as part of the research groups or implementing our curricular and co-curricular innovations.{\color{magenta}umm, this is actually *unethical*. Instead, we will *involve* a large portion of our colleagues as senior personnel and give them meaningful roles in this RTG, thereby contributing to its success and with a long-term training vision.}
 
-\marginpar{\color{cyan}TAG: Chun, can someone double-check these numbers?} We currently have \numUG BS applied mathematics and statistics majors, \numPhD PhD students and   \numPostDoc postdoctoral fellows or visiting assistant professors. Our graduates build their careers in  industry  and academia. Many of our undergraduates pursue PhDs at other top universities, including Cornell, NYU, UCLA and UIUC. Most of our postdocs or visiting assistant professors earn tenure track positions after leaving Illinois Tech.
+\marginpar{\color{cyan}TAG: Chun, can someone double-check these numbers? {\color{red}Yes, Chun will do}} We currently have \numUG BS applied mathematics and statistics majors, \numPhD graduate students, \numjoint graduate students with the Department of Computer Science and   \numPostDoc postdoctoral fellows or visiting assistant professors. Our graduates build their careers in  industry  and academia. Many of our undergraduates pursue PhDs at other top universities, including Cornell, NYU, UCLA and UIUC. Most of our postdocs or visiting assistant professors earn tenure track positions after leaving Illinois Tech.
 
-\subsection*{Partnership with Argonne, IMSI, C2ST, and Oak Ridge}
+\subsection*{Partnership with  national labs and local institutes} 
+...{Argonne, IMSI, C2ST, and Oak Ridge}
 This RTG will benefit from our ongoing collaboration with Argonne National Laboratory (18 miles west of our campus). 
-{\color{magenta}will return to edit this.} We will partner with Argonne in joint research and workshops, and worthy students will intern at Argonne.  We will begin a new collaboration with the NSF Institute for Mathematical and Statistical Innovation (IMSI), hosted at University of Chicago (5 miles south of our campus). Our RTG trainees will participate in IMSI programs, and we will co-sponsor programs of mutual interest with IMSI.  For more than a decade, the Chicago Council on Science and Technology (C2ST) has enhanced the public’s understanding and appreciation of science and technology and their impact on society. C2ST will co-sponsor outreach programs with our RTG and will train our students in communicating their scientific ideas to a broader audience. Letters of collaboration from these partners are included as supplementary documents.  A recent joint research group was formed with peoples from various departments (ECE, CS and Aerospace) in Illinois Tech and the Data Analysis and Machine Learning Group within the Computer Science and Mathematics Division at the Oak Ridge National lab.{\color{magenta}will return to edit this.}
- 
+{\color{magenta}will return to edit this.} We will partner with Argonne in joint research and workshops, and worthy students will intern at Argonne.  We will begin a new collaboration with the NSF Institute for Mathematical and Statistical Innovation (IMSI), hosted at University of Chicago (5 miles south of our campus). \FredNote{We are already collaborating with IMSI.  Aren't we growing our collaboration?}Our RTG trainees will participate in IMSI programs, and we will co-sponsor programs of mutual interest with IMSI.  For more than a decade, the Chicago Council on Science and Technology (C2ST) has enhanced the public’s understanding and appreciation of science and technology and their impact on society. C2ST will co-sponsor outreach programs with our RTG and will train our students in communicating their scientific ideas to a broader audience. Letters of collaboration from these partners are included as supplementary documents.  A recent joint research group was formed with peoples from various departments (ECE, CS and Aerospace) in Illinois Tech and the Data Analysis and Machine Learning Group within the Computer Science and Mathematics Division at the Oak Ridge National lab.{\color{magenta}will return to edit this.}
+{\color{magenta}text from Sven:} Argonne offers a variety of internship opportunities for undergraduate and graduate students, as well as faculty-student teams. Internships are typically 10-14 weeks long over the summer and involve training in computational mathematics tools and techniques. Students work on current Argonne projects, are supervised by Argonne staff. The technical part of the internship is complemented by additional training opportunities.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -300,18 +310,19 @@ This RTG will benefit from our ongoing collaboration with Argonne National Labor
 
 \subsection{Research Themes} \label{sec:researchproblems}
 
-We propose three research themes: 
-1.\ Variational Analysis and Inference of High Dimensional Complex Dynamics; 
+This RTG is centered around three research trusts: inference, dynamics, and sampling. The research supported by this RTG is organized in three themes such that each theme involves two of the research thrusts: 
+%We propose three research themes: 
+Theme 1, \emph{Variational Analysis and Inference of High Dimensional Complex Dynamics}, couples inference and dynamics. 
 %\marginpar{\color{cyan}TAG: MING, I don't know the final title of your theme, edit as needed}
-2.\ Sampling combinatorial structures; 
-3.\ Dynamics under uncertainty. 
-All 3 themes incorporate two of the main trusts of this RTG: namely, Theme 1 couples inference and dynamics, Theme 2 inference and sampling, and Theme 3 sampling and dynamics. The common thread are these mathematical constructs and joint applications in data science. {\color{magenta}say a sentence about each theme.} 
+Theme 2, \emph{Sampling combinatorial structures}, couples inference and sampling. 
+Theme 3, \emph{Dynamics under uncertainty}, couples sampling and dynamics. 
+%All 3 themes incorporate two of the main trusts of this RTG: namely, Theme 1 couples inference and dynamics, Theme 2 inference and sampling, and Theme 3 sampling and dynamics. 
+Joint applications in data science provide an additional common thread to the proposal. 
 %under the umbrella of complex dynamical systems {\color{magenta}EDIT ME} NEW: theme 1 = inference and dynamics; theme 2 = sampling and inference; theme 3 = sampling and dynamics. All 3 themes have interactions and data science connection. {\color{cyan}$\leftarrow$ This is the new THREAD of our proposal. } 1.\ Dynamics Under Uncertainty; 2.\  Energetic Variational Approaches for Complex Dynamics; and 3.\ Mathematical Tools for Open Quantum Systems. Theme 1 connects with Theme 2 via minimizing action functionals. In Theme 3, we examine the interplay of quantum uncertainty and environmental fluctuations, and further consider a Bohmian trajectory formulation of quantum dynamics, thus linking with Theme 1. 
-The key faculty and scientists for each theme are listed below.
 
-
-%{\color{cyan}doesn't this paragraph better belong under "academic environment" above?} 
-The structure of our department is similar to the way the research themes interact, tied together by fundamental mathematical constructs rather than broad research areas. As such, there is a natural team structure for each theme:  at least one of the PIs,  additional researchers from the department, additional researchers either from Argonne National Labs or a department outside applied mathematics, % The team for each theme will consist of one or more PIs, researchers with at least one Argonne scientist or faculty member from a department outside applied mathematics, {\color{magenta}this is NOT yet true for sonja's theme. %Argonne can collab only if application of sampling to optimization!}  
+The key faculty and scientists for each theme are listed below. 
+% this discussion edited to better reflect the proposal/personnel structure 
+The structure of our department is similar to the way the research themes interact, tied together by fundamental mathematical constructs rather than broad research areas. As such, there is a natural team structure for each theme:  at least one of the PIs,  additional researchers from the department, additional researchers either from Argonne National Lab or a department outside applied mathematics, % The team for each theme will consist of one or more PIs, researchers with at least one Argonne scientist or faculty member from a department outside applied mathematics, {\color{magenta}this is NOT yet true for sonja's theme. %Argonne can collab only if application of sampling to optimization!}  
 together with applied mathematics undergraduate and graduate students and postdoctoral fellows.
 %{\color{cyan}New strength:}
 The core of our team for the proposed project includes NTT and TT faculty across all levels in our department. The planned activities synergize across undergraduate, graduate, and postdoctoral training and collaboration and research. They are planned so as to include, invite, and impact all students, postdocs, and faculty in the department, in addition to trainees directly supported by this RTG. 
@@ -328,7 +339,8 @@ Chun Liu (lead), Trevor Leslie (Illinois Tech, Applied Math), Xiaofan Li (Illino
 \subsubsection*{Background} One of the most crucial tasks in data science is the capability of dealing with high-dimensional data efficiently and effectively, such as high-resolution image generation, large language models for natural language processing, text/image/voice mixed data analysis, medical image/data processing, etc.  Many of high dimensional data sets which we are interested in obey some form of physical/biological/chemical laws governed by systems of ODE/PDE, which makes the analysis and inference extremely difficult.  We propose several energetic variational approach based data-driven methods to infer the governing equations from observation data for analysis, prediction, and control.  The framework of energetic variational approach, originated from seminal works of Raleigh \cite{strutt1871some} and Onsager \cite{onsager1931reciprocal,onsager1931reciprocal2}, provides a paradigm to determine the dynamics of a non-equilibrium system from prescribed energy-dissipation laws.  Such paradigm offers a unique pathway into the accurate scientific discovery of models from high-dimensional dynamical data. 
 
 \subsubsection*{Analyzing Complex Behaviors from High dimensional Data}
-Complex systems of interacting agents\footnote{Agents here can be referred to as particles, cells, bacteria, animals, human beings, robots, planets, etc.} can produce a wide range of interesting and intriguing patterns.  Among these complex patterns, collective behavior (such as clustering, flocking, milling, swarming, synchronization, etc.) is one of the most fascinating and difficult to analyze and model mathematically.  Furthermore, proper modeling and control of such behaviors can have significant contribution and application in understanding super conductivity, cell aggregation, pigment/fingerprint formation, social behaviors in insects (bees, ants, and locusts) and human, market behavior, opinion/consensus formation, social network analysis, etc. We employ the energetic variational approach to analyze complex collective behaviors such as line-formation (emergence of leaders in social sciences), swarming, multi-modal emergence of several behaviors, and stochastic patterns.  This analysis can be done by investigating the corresponding energies responsible for producing the patterns and derive the stability, regularity and steady states of such systems.  Proper analysis of new collective dynamics can also be used as a physical prior in the data driven modeling of collective behaviors.
+Complex systems of interacting agents (i.e., particles, cells, bacteria, animals, human beings, robots, planets, etc.) %\footnote{Agents here can be referred to as particles, cells, bacteria, animals, human beings, robots, planets, etc.} FOOTNOTE TAKES TOO MANY LINES OF SPACE FOR NO GOOD REASON.
+can produce a wide range of interesting and intriguing patterns.  Among these complex patterns, collective behavior (such as clustering, flocking, milling, swarming, synchronization, etc.) is one of the most fascinating and difficult to analyze and model mathematically.  Furthermore, proper modeling and control of such behaviors can have significant contribution and application in understanding super conductivity, cell aggregation, pigment/fingerprint formation, social behaviors in insects (bees, ants, and locusts) and human, market behavior, opinion/consensus formation, social network analysis, etc. We employ the energetic variational approach to analyze complex collective behaviors such as line-formation (emergence of leaders in social sciences), swarming, multi-modal emergence of several behaviors, and stochastic patterns.  This analysis can be done by investigating the corresponding energies responsible for producing the patterns and derive the stability, regularity and steady states of such systems.  Proper analysis of new collective dynamics can also be used as a physical prior in the data driven modeling of collective behaviors.
 
 \subsubsection*{Inferring Complex Behaviors from High dimensional Data}
 Data driven modeling of complex behaviors is also critical in understanding collective behaviors, as it can provide validation as well as improvement to existing models by inferring physically meaningful governing equations from observation data.  Hence, another important application of our energetic variational approach is to derive accurate and physical meaningful governing equations from observation data.  Various machine learning methods have been developed in the group for data-driven modeling of collective behaviors from observation data~\cite{LZTM2019, ZMM2020, MMQZ2021, FMMZ2022,MTZM2022, ZMM2023}.  We aim to provide new learning methods for dealing with more complicated systems, complex observation schemes, and limited knowledge of labeled data.
@@ -347,88 +359,57 @@ Moreover, the team has the track record and relevant expertise to lead other int
 % The interdisciplinary nature of the team will provide an opportunity to have balanced training in different approaches of applied math, most notably multiscale modeling and analysis associated with the applications in biology and soft matter physics.
 % \subsubsection*{Physics Preserving Numerical Simulations}
 % The energetic variational formulation also provides guidelines to develop numerical schemes that preserves the basic physics, such as frame-indifference, positivity of physical quantities  and conservation of mass, for many complicated systems arising from multiscale multiphysics problem in physics, biology and material science \cite{liu2020variational, liu2020lagrangian, liu2020structure}. The same numerical frame can also be applied develop new algorithms for machine learning \cite{wang2020particle}. Different spatial discretizations, including finite element, spectral methods, particle methods and neural network discretization, and time-stepping techniques can be incorporated in the numerical framework. These projects will provides training in the areas of scientific computation, multi-scale simulation and machine learning.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{Theme 2. Sampling combinatorial structures} 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- Sonja Petrovi\'c (lead), 
- Robert Ellis (Illinois Tech, Applied Math), 
- Hemanshu Kaul (Illinois Tech, Applied Math), 
- Michael Pelsmajer (Illinois Tech, Applied Math), 
- Despina Stasi (Illinois Tech, Applied Math). 
- %  TRACK RECORD + CROSS-DISCIPLINARY COLLAB = PLAN ..  %% 
-\marginpar{Unfortunately, SP is the only PI on this list - the rest are senior personnel.:(} 
 
-Within this research theme, we consider structural and computational problems that are critical to discrete optimization, computational algebra, and statistics, and whose solution is amenable to randomization techniques. Our proposed research is guided by two challenging applications: {\color{magenta}to do:} 
-choose application 1 (be specific, such as:) testing model/data fit for structured networks \cite{}, and the analysis of choose application 2 \cite{}.  
-These applications pose common challenges: (a) they involve a large number of variables and combinatorial constraints; (b) they are encoded as high-dimensional complex discrete structures; (c) they cannot be solved with current state-of-the-art methods. 
-In a tightly integrated research program, we propose to (i) develop new structured sampling techniques that exploit combinatorial structure; (ii) investigate new randomized algorithms based on efficient structured sampling for  inference, model fit testing, and discrete optimization problems; (iii) leverage our combined expertise in discrete and computational mathematics, theoretical and applied statistics, and randomized algorithms to develop  blended hybrid approaches to solve these challenging problems. 
-In particular, we will focus on the following three areas. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Theme 2. Sampling Combinatorial Structures} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ Sonja Petrovi\'c (lead),  with colleagues from Illinois Tech, Applied Math: 
+ Robert Ellis,
+  Hemanshu Kaul, %(Illinois Tech, Applied Math), 
+ Michael Pelsmajer, %  (Illinois Tech, Applied Math), 
+and  Despina Stasi; % (Illinois Tech, Applied Math). 
+and collaborators from Argonne National Laboratories led by Sven Leyffer.  
+ %  TRACK RECORD + CROSS-DISCIPLINARY COLLAB = PLAN ..  %% 
+%\marginpar{Unfortunately, SP is the only PI on this list - the rest are senior personnel :(} 
+% entire Theme 2 should be 1.5 pages! 
+
+The research encompassed by this theme  is guided by 
+% challenging applications across different areas, all of which pose common challenges: (a) they involve a large number of variables or combinatorial constraints; (b) they are encoded as high-dimensional complex discrete structures; (c) they cannot be solved with current state-of-the-art methods.  The 
+structured  computational problems that are critical to discrete optimization, computational algebra, and statistics, and their solution is amenable to randomization techniques. 
+%In a tightly integrated research program, we propose to (i) develop new structured sampling techniques that exploit combinatorial structure; (ii) investigate new randomized algorithms based on efficient structured sampling for  inference, model fit testing, and discrete optimization problems; (iii) 
+We will leverage our team's track record, ongoing collaboration, and  combined expertise in discrete and computational mathematics, statistics, and randomized algorithms to develop  blended hybrid approaches to the following three  problems. 
+%In particular, we will focus on the following three areas. 
 
 
 \subsubsection*{FitNet: information-preserving data reduction,  networks, sampling, and estimation} 
- Statistical network models for discrete relational data  have grown in popularity in recent decades. They are designed to model various types of interactions between a set of entities--nodes in the network--such as  individuals \cite{}, organizations \cite{}, proteins \cite{}, neurons \cite{}, or brain regions\cite{}. Links represent observed relationships between the nodes, such as personal or organizational affinities, social or financial or economic relationships, chemical or physical links, and can be directed or undirected, or be counted with multiplicity or weight. Node covariates may be present (e.g., social networks may include nodes’ gender, education, income, interests, etc.) and are often of key importance for causal inference. The networks may evolve over time.
+ Statistical network models for discrete relational data  have grown in popularity in recent decades, as illustrated in \cite{goldenberg2010survey} \marginpar{\color{red}why is my citation not showing up? it IS in the bib file.} and \cite{KolaczykBook2017}. They are designed to model various types of interactions between a set of entities--nodes in the network--such as  individuals \cite{JiJinAuthorsAOAS}, organizations \cite{petrovic2019}, proteins or neurons \cite{GPS21+}, or brain regions \cite{karwa2016exact}. Links represent observed relationships between the nodes, such as personal or organizational affinities, social or financial or economic relationships, chemical or physical links, and can be directed or undirected, or be counted with  weight. Social networks may include nodes’ gender, education, income, etc.; these   are often of key importance for causal inference. 
 
+The question of model goodness of fit is central in statistics and unsolved in data science; it is critical for   estimating network features, appropriately simulating data,  and correctly interpreting the results.  %``Doing data science" does not make sense without a proper way to test model fit, as using wrong models will simply lead to wrong conclusions. This step is separate from what is often referred to `validation' in practice. 
+It is also considered to be very challenging in the network science community due to both the size of the networks and their structure. Our  hybrid algebraic-combinatorial approach  \cite{GPS16} has proved to be efficient, solving a decades-old problem in statistics by developing a dynamic construction of  an irreducible Markov chain for model testing. This method can be applied to networks with a thousand nodes, while state-of-the-art software \cite{4ti2} that directly computes Markov bases can handle networks with at most 10 nodes because it is, by design, data agnostic. 
+%PI Petrovi\'c has extended this dynamic sampling methodology to other problems in statistics [65, 79].     
 
-The question of model goodness of fit is central in statistics for   estimating network features, appropriately simulating data,  and correctly interpreting the results. It is also considered to be very challenging in the network science community due to both the size of the networks in many applications as well as their sparsity and particular structure. 
-{\color{magenta}fix citations} [78] shows that a hybrid algebraic-combinatorial approach from [63] is efficient for goodness of fit, solving a decades-old problem in statistics by developing a dynamic MCMC algorithm that can construct 106 Markov moves for a network with several hundred nodes.  In contrast, state-of-the-art software [1] that directly computes Markov bases can handle networks with at most 7 nodes because it is, by design, data agnostic. PI Petrovi\'c has extended this dynamic sampling methodology to other problems in statistics [65, 79].     
-\marginpar{\color{magenta}i'll tighten this later.}
-    We are specifically interested in a new sampling framework that uses a parameter hypergraph, which can be abstracted by building on PI Petrovic’s work [61, 65, 114–116] to sample integer points in polytopes, to derive rapid mixing results such as [43]. 
-NOTE:  *** good mixing time of the chain, some of which were formally proved in a MS thesis I supervised in 2016. **DOMESTIC STUDENT**
-
+During the proposed project, we  are specifically interested in a new sampling framework that uses a parameter hypergraph, which can be abstracted by building on PI Petrovic’s work, an important  part of which was coauthored with the team on this RTG \cite{shellERGM,betaHypergraphs,tergms,bouquetAlgebra,KarwaPetrovic:AOASauthors,Psurvey,PTVhypergraphs,RPF:11}.  A Masters thesis she supervised in 2016 \cite{DillonMS16} derives a rapid mixing result for the model fit Markov chain. This proposal will generalize this result to other models. %% THIS WAS A **DOMESTIC STUDENT**
+%{\color{magenta} I fail to provide any mathematical details. this is simply very broad.} 
 
  \subsubsection*{Dynamic lattice sampling and discrete optimization.} 
-In ongoing work of Petrovi\'c and collaborators at Argonne National Labs, and current PhD students, we are developing sampling techniques that exploit combinatorial structure, and develop randomized algorithms for massive discrete optimization problems that are intractable with current state-of-the-art solvers. 
-{\color{magenta}EDIT ME} In this proposal... [guided by this and our prior stats work...] We will develop and analyze new hypergraph Markov bases that exploit both problem structure and the iterative nature of our proposed algorithms 
-Related work by PI Petrovi\'c and Stasi [37] highlights how the clever use of
-sampling algorithms to dynamically create polynomial bases for
-sampling lattice points in polytopes fibers can turn an impossible-
-to-scale algorithm into a dynamic, data-driven, scalable one of practical use. 
-We will investigate carefully designed sampling strategies for sampling .......... and develop efficient implementations of dynamically generated “moves” for constructing a Monte Carlo sampling algorithm.
+ Petrovi\'c, Leyffer, and current PhD students and postdoc are developing sampling techniques that exploit combinatorial structure in order to develop randomized algorithms for massive discrete optimization problems that are intractable with other solvers. In joint work with PhD student Bakenhus, PI Petrovi\'c tackles the problem of sampling the set of nonnegative integer lattice points in a polytope. This set, also known as the fiber of a linear map, is the support set of a (mixed) integer program. We propose a biased sampling algorithm with a Bayesian framework, such that  the bias embedded in our algorithm updates sampler parameters to improve fiber discovery rate at each step chosen from previously discovered elements. As of this writing, we are able to efficiently (on a laptop) sample from fibers that are entirely out of reach for the state-of-the-art Markov bases samplers. 
 
-\begin{comment}
-%However, the main computational challenge had remained open to make this theory useful for network and large  data in practice.  
-A bulk of my applied work has focused on filling this gap: %e.g.,
-%\cfbox{cyan}{
-%{\bf Scalability.}
- \cite{GPS} solves the problem of model fitting %}
-  for the Holland-Leinhardt $p_1$ model \cite{HL81}, a problem that has been open for decades, based on the theory previously developed in  \cite{PRF10, RPF-mle, SteveAleMe-holland}. 
-We build a new methodology and construct  a {dynamic and data-dependent}  MCMC algorithm in statistical software {\tt R}, %analyze some %of the
-%  benchmark data sets, show satisfying statistical results, 
- and indicate good mixing time of the chain, some of which were formally proved in a MS thesis I supervised in 2016. **DOMESTIC STUDENT**
-%   In 2016, my former Masters student Dillon proved  that this Markov chain algorithm is \emph{rapidly mixing} for many instances. 
-% \cite{DiscreteForAlgStatNetworks} surveys how one might construct such good Markov chains by using the graph-theory literature perspective and highlights open problems on extending it to hypergraphs. 
-My other recent contributions to statistical analysis and modeling of networks comprises several papers on: 
- more general classes of models for graphs using global summary statistics \cite{coresERGM}; 
- formal models for random hypergraphs \cite{betaHypergraphs}; 
- %\sout{ In \cite{betaHypergraphs} we introduce a model for random hypergraphs in order to represent the occurrence of multi-way interactions among agents in a social network. }
- addressing the well-known issue of degeneracy \cite{dergms};
-  and extending the reach of algebraic statistics to testing model fit of mixture models---such as the highly popular latent stochastic blockmodels---using a blend of algebraic and Bayesian techniques \cite{mrc2016}. 
-%---.....In contrast,.....---
-% there exists a rich body of work by the algebraic geometry community on exploring so-called Markov bases, such as Graver bases [35, 38]. Their structure is known for specific problem classes [34], leading to fast optimization algorithms [36]. Markov bases form a cornerstone of algebraic statistics: [42] translates this concept to polynomial algebra; [46] and others pointed to the computational challenges in using them; and [33, 40, 44, 72, 107] provide fundamental results on Markov bases structure. 
+In ongoing work, the Argonne team led by SP Leyffer have considered a mixed-integer robust optimization model expressible as a problem supported on a fiber  for identifying potential weaknesses in an interconnected infrastructure setting.  The state-of-the-art discrete optimization solvers face fundamental challenges when tackling problems of this form. In our joint work, we will develop \emph{randomized} discrete optimization methods to tackle a new class of challenging societal problems. Our prior work, e.g., \cite{PShypergraphs}  highlights how the clever use of sampling algorithms to dynamically create polynomial bases for sampling lattice points in polytopes fibers can turn an impossible- to-scale algorithm into a dynamic, data-driven, scalable one of practical use.
 
-\sout{This proposal provides a unique opportunity to study structured sampling techniques within a broader (nonlinear) optimization context. The iterative nature of the nonlinear optimization algorithms in turn motivates new research into updating Markov bases, and using approximate bases.}
-* We will develop metrics and benchmarks rooted in the driving application, and to validate and analyze our theoretical results on mixing times (§3.2) and convergence (§3.1 and §3.3), and benchmark our methods on challenging combinatorial optimization problems.
-* We will develop and analyze new hypergraph Markov bases that exploit both problem structure and the iterative nature of our proposed algorithms (§3.2). 
-\end{comment}
 
-\subsubsection*{Dynamic networks}\marginpar{\color{magenta}TAG: Hemanshu, Michael}
-Investigate {\it dynamic networks}: networks that evolve over time, or networks where each interaction happens at a specific time.  
-{\color{cyan}please add citations to this part.} \marginpar{[and this text will also likely need to be tightened; entire Theme 2 should be 1.5 pages!]}
-
-Investigate appropriate adaptive time scales  for summarizing dynamic networks and develop corresponding measures of quality. 
+\subsubsection*{Dynamic networks}\marginpar{\color{magenta}TAG: Hemanshu, Michael - Sonja sent an email.}
+Finally, we will investigate {\it dynamic networks}: networks that evolve over time, or networks where each interaction happens at a specific time.  
+{\color{cyan}please add citations to this part.} 
+SPs Kaul, Pelsmajer, and Stasi will co-lead an  investigation into appropriate adaptive time scales  for summarizing dynamic networks and develop corresponding measures of quality. 
 Aggregation of longitudinal interaction data capturing multiscale phenomena will be combined with methods from statistics and network theory to be able to handle both temporal errors (sampling/data collection errors) and topological errors (missing or spurious interactions in the network).
 
-The longitudinal data of interactions in such networks has to be carefully analyzed to discover persistent patterns, such as hidden communities in a dynamic network of social interactions. Traditionally 
- 		[[sp: in graph theory]] 
-such data is aggregated into a single network, losing the temporal aspect of the data and also making its size difficult to analyze simultaneously. Another way is to take "snapshots" of the dynamic network data at appropriate times where the timing of such snapshots can make a dramatic difference in capturing or missing the essential aspects of the network behavior. 
+The longitudinal data of interactions in such networks has to be carefully analyzed to discover persistent patterns, such as hidden communities in a dynamic network of social interactions. Traditionally in graph theory, such data is aggregated into a single network, losing the temporal aspect of the data and also making its size difficult to analyze simultaneously. Our recent work \cite{tergms} makes a first connection between this idea and statistics. Another way is to take "snapshots" of the dynamic network data at appropriate times where the timing of such snapshots can make a dramatic difference in capturing or missing the essential aspects of the network behavior. 
 
-In order to summarize the dynamic network data usefully, one must determine an appropriate time-scale, or adaptive time-scale, or multiple time-scales to capture multiscale phenomena. The aggregation of this data based on such time-scale(s) must be combined with methods from statistics and network theory to be able to handle both temporal errors (sampling/ data collection errors) and topological errors (missing or spurious interactions in the network).  We will develop network algorithms and statistical models to handle this data time-scale aggregation problem in order to capture more types of network behavior and to do it better.  We will also consider different measures of quality and evaluate the success of our methods and models on both real and synthetic dynamic network data.
+In order to summarize the dynamic network data, one must determine an appropriate time-scale, or adaptive time-scale, or multiple time-scales to capture multi-scale phenomena. The aggregation of this data based on such time-scale(s) must be combined with methods from statistics and network theory to be able to handle both temporal errors (sampling/ data collection errors) and topological errors (missing or spurious interactions in the network).  We will develop network algorithms and statistical models to handle this data time-scale aggregation problem in order to capture more types of network behavior and to do it better.  We will  consider different measures of quality and evaluate the success of our methods and models on  real and synthetic dynamic network data.
 
 
-\begin{comment}
-\paragraph{Challenges \& Novelty.} 
-{The challenges} for the proposed research program are both theoretical and applied.   For example, while the  Bayesian framework leads to provably better   estimation prediction in some critical cases,   it is not clear a priori how to use typical model selection criteria for networks,  due to hidden variables and model singularities.  {The novelty} of our approach lies in the interdisciplinary nature of the research program:   importing various tools from graph theory and nonlinear algebra into statistics and algorithm design for measuring goodness of fit.  
-\end{comment}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -439,7 +420,7 @@ Xiaofan Li (lead), Fred Hickernell, Michael Pelsmajer, Ming Zhong (Illinois Tech
 
 \subsubsection*{Background} The interactions of uncertainty and nonlinearity lead to intriguing phenomena, such as  transitions between  different dynamical regimes. We shall develop modeling, analytical, computational and data science  methods to quantify stochastic dynamics, with applications to chemical \cite{agaoglou_chemical_2019}, biophysical \cite{Ruoff2018BiologicalCR}, power grid \cite{MEDJROUBI201714} financial risk \cite{DixHaBil20a,Gla03}, and climate systems \cite{Alexandrov2020NonlinearCD, Franzke2017NonlinearAS, Wan2020ADF}. 
  
-Complex systems are oftentimes under the influence of randomness or uncertainty \cite{Moss1, Horst, Gar, VanKampen3}. Uncertainties may also be caused by our lack of knowledge of some physical processes that are not well represented in the mathematical models (epistemic) and due to the inherent randomness of a specific event  \cite{Palmer1, Kantz, Wilks, Williams}.
+Complex systems are usually under the influence of randomness or uncertainty \cite{Moss1, Horst, Gar, VanKampen3}. Uncertainties may also be caused by our lack of knowledge of some physical processes that are not well represented in the mathematical models (epistemic) and due to the inherent randomness of a specific event  \cite{Palmer1, Kantz, Wilks, Williams}.
 Although these random mechanisms appear to be very small or very fast, their long time impact on the system evolution may be delicate or even profound \cite{Arnold, DuanBook2015}. 
 
 %These delicate impacts on the overall evolution of dynamical systems have been observed in, for example, stochastic bifurcation \cite{Crauel, CarLanRob01, Horst}, stochastic resonance \cite{imkeller2002model},  and  noise-induced pattern formation \cite{Gar, blomker2003pattern}. Hence, taking stochastic effects   into account is of central importance for mathematical modeling of complex systems under uncertainty.   
@@ -515,58 +496,38 @@ This is the pilot-wave, or hydrodynamical, point of view. We will explore this p
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Research Group Activities}
+\subsection{Regular Research  Activities}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\{\color{magenta}update seminar names and theme numbers}
-The groups of faculty, postdocs, and students corresponding to the three research themes will meet regularly during the academic year and the summer. In additional to the focused research activities on problem-solving, the interactions will include department-wide seminars. The PIs already run a Stochastic and Multiscale Modeling and Computation seminar for Theme $1$ , a Nonlinear Algebra and Statistics (NLAStats) seminar for Theme $2$, and a Computational Mathematics and Statistics seminar for Theme $3$.
-In order to facilitate cross-theme collaboration, the times will be scheduled to not overlap. 
-
-{\color{cyan}TO ADD-- IMPORTANT NOTES}: student training: ``elements of a research seminar". A series of events that will help bring our department together. These will be *new* events but will build on our past and ongoing efforts which were faculty initiated. We will 'institutionalize' them in order to create an inclusive training environment and lasting impact (post-RTG). These activities are: 
-
-0) SURE (summer RUE) so that graduate students, postdocs and PIs can participate in training undergraduate students (from outside of Illinois Tech) and prepare them for future research, collaboration with also IDEAL {\color{magenta}will return to edit this (Yuhan).}
-
-1) graduate student seminar \marginpar{\color{magenta}TAG: Hemanshu} - once a month or so, keep it reasonable. 
-
-2) undergraduate research and project proposals \marginpar{\color{magenta}TAG: Despina}  - once a semester or so. 
-
-2b) Interaction with the SIAM student chapter (that's an undergraduate student chapter) at IIT?  They have organized social events (like visiting the Argonne Lab, attending CSO etc.), my favorite theorem (a good way for the students to present a talk), lunch with professors, etc.
-
-3) student and postdoc involvement in our department research colloquium, where the colloquium speakers are required to give research talks which are accessible to general audiences; moreover, we also require the speakers to interact with the graduate students for the after-talk tea session in our student lounge.  We arrange individual meetings for our postdoc and senior graduate students to meet with the speakers to discuss their research.  We design a required graduate level course for attending department colloquium for graduate students, where the students are asked to submit a one-page summary for the talks they attend.  (MZ: this is already being implemented; we don't have a pre-talk-chat-with-students component yet).
-
-% \marginpar{\color{magenta}TAG: Ming} - the research topics represented need to be as broad as we are. It is also the job of the colloquium organizer to **ensure** speakers are student-friendly. Just saying this is not enough; we have to **do** something. I propose creating a 15-minute event before the talk for which the colloquium speaker prepares and which is mandatory for our students: what are the definitions one needs to know in order to follow the talk? What are some intuitive concepts that are critical, but which cannot typically be absorbed by a non-expert in, like, the 3 minutes they show up on a typical slide? Also I do not know what we do for the colloquium credits any more, but bring back the talk summaries (ask Sonja for details) and this is then tying in the entire department into our graduate student training and ensures the impact of the RTG continues post-grant. AND we are all involved. 
-
-4) Workshops on job hunting (both academia and industry?)/grant writing for senior graduate students and postdocs;  We should invite alumnus for homecoming events to discuss their jobs/career path after graduation and such.
-
-5) Summer school/workshop for graduate students and postdocs with rotating themes from the RTG so that the graduate students and postdocs can be exposure to research areas outside of IIT and participate in networking events during the time.
-
-{\color{magenta}Sonja will add: student training will incorporate  statistics and data literacy.} 
+% The groups of faculty, postdocs, and students corresponding to the three research themes will meet regularly during the academic year and the summer. In addition to the focused research activities on problem-solving, the interactions will include department-wide seminars. The PIs already run a
+Each of the three research themes from Section 2.1 represents new interdisciplinary connections between our faculty, which will be used to strengthen department-wide activities. The PIs already run related research seminars: 
+Stochastic and Multiscale Modeling and Computation seminar for Theme $1$, Nonlinear Algebra and Statistics (NLAStats) and Discrete Math seminars for Theme $2$, and a Computational Mathematics and Statistics seminar for Theme $3$.
+In order to facilitate cross-thematic collaboration, the seminar times will be scheduled to not overlap. 
 
 
-\subsection*{USE THIS AS impact of sonja's theme to social good/outreach, as well as data literacy etc.}
-To enact positive, effective, and long-lasting change addressing the inequalities in the quality of life will require a multiyear, multidisciplinary effort.  ... social justice statisitcs. {\color{cyan}sonja see google doc!!} 
-Much of the modern literature on statistical network analysis stems from a handful of seminar papers rooted in social sciences [Moreno, Millgram, etc.; see FienbergEtAl-survey and references given therein]. Moreno invented the sociogram - a precursor to the network representation of social relationships omnipresent in social sciences and statistics today. Sampson collected similar affinity data between monks in a monastery ….(add me). These small data sets were novel at the time as they collected information about social relationships for which social science theories were being created. They were longitudinal studies, and offered a glimpse into how these social networks evolved over time. In recent years, similar data has been collected in micro-economics and used to identify [cite] key households that help spread information about micro-loans from a certain bank… 
-Networks are relational data, and as such can be collected on the individual level, or household level, or neighborhood business level, or neighborhood-within-the-context-of-the-city level. Which one, or a combination of which, is most appropriate to measure inequities in the quality of life? The evolution over the ten years of which data structure best captures the emergence of equity? What is the right measure of ‘centrality’ of a node (representing any of: person, community bloc, organization, …) that signifies its critical importance in enacting equity? 
-We will … 
-SEEK OUT (anonymized!) longitudinal, multimodal, relational data in partnership with .... ??? 
-Develop new statistical models in support of theories for inequality in the quality of life 
-Develop metrics and measures of inequity 
-Use the longitudinal networks at the various levels (micro-econoimc, social, neighborhood, etc.) to develop new statistical models that integrate them.
+%THIS SUBSECTION DESCRIBES *REGULAR* RTG ACTIVITIES, BUT THEN WE ALSO HAVE SUMMER AND OTHER CO-CURRICULAR TRAINING ALL OF WHICH ARE ALSO "OUR ACTIVITIES" SO THIS IS JUST A STUPIDLY ORGANIZED SECTION! THIS REALLY SHOULD NOT BE activities but day-to-day nuts-and-bolts!!! "research activities"!!!
 
-\subsubsection*{Nuts and bolts} 
-\marginpar{\color{magenta}edit and tighten}
-All trainees (students and postdocs) supported by this RTG will be assigned to one or two projects and join the corresponding seminar. 
-Trainees may enter or exit these research groups at different times of the year, e.g., some will participate during a summer only, while others will participate over the course of a couple of academic years. Thus, certain background lectures will need to be repeated periodically.  Initially these will be given by the PIs and our faculty and scientific collaborators, and the lectures will be recorded so that students and postdocs can refer to them.  However, part of our training will be to mentor our postdocs and experienced students to give these background lectures as well.  
+%{\color{magenta}Sonja will add: student training will incorporate  statistics and data literacy.} 
 
-Meetings will be held in hybrid mode, i.e., in person and via video conference, to allow the greatest participation.  Workshops, tutorials, and public lectures will be broadcast via our Illinois Tech YouTube channel to allow greater access, both synchronously and asynchronously.
-
+In terms of other day-to-day activities by the research group, 
+%\subsubsection*{Nuts and bolts} 
+%\marginpar{\color{magenta}this paragraph shall become $<10$ lines.}
+all trainees (students and postdocs) supported by this RTG will be assigned to one or two projects and join the corresponding seminar. 
+Trainees may enter or exit these research groups at different times of the year. Each seminar will include background lectures. To ensure  continuity and  help connect outgoing, current, and incoming trainees, background lectures will be  %, e.g., some will participate during a summer only, while others will participate over the course of a couple of academic years. Thus, certain background lectures will need to be repeated periodically.  
+initially given by the PIs and our faculty and scientific collaborators, and the lectures will be recorded so that students and postdocs can refer to them.  However, part of our training will be to mentor our postdocs and experienced students to give these background lectures as well.  
+Meetings will be held in hybrid mode as necessary. %much as possible to allow , i.e., in person and via video conference, to allow the greatest participation.  {\color{magenta} youtube broadcast?!\sout{Workshops, tutorials, and public lectures will be broadcast via our Illinois Tech YouTube channel to allow greater access, both synchronously and asynchronously.}}
 Trainees entering the research groups will be provided with a faculty mentor and a postdoc or experienced student mentor.  New trainees will be given an article to read related to the research problem and report on it to the seminar, describing what are the significant claims, pointing out drawbacks, and suggesting directions for extension. The articles may be in mathematical sciences or in an application area.
+As trainees become engaged in research, they will report on their progress at the regular seminar meetings, while substantial new results and new papers will be presented at regional and national conferences and in refereed publications.
 
-As trainees become engaged in research, they will report on their progress at the regular seminar meetings. They will report on significant progress at local and regional conferences.  Substantial progress will be reported at national and international conferences and in refereed publications.
 
-Each year, each research group will organize a two-day workshop, either at Illinois Tech, in collaboration with IMSI or at an international research center such as the one in Banff.  The workshops will showcase our own results to others outside Illinois Tech and also let our trainees hear from international experts.
-{\color{magenta} And note that we have a track record of doing so. Sonja is organizing a 15-week program at IMSI *and* a Banff workshop in 2023, for example.}
 
 Members of research groups will actively apply for external funding to further support their research activities.  PhD students and postdoctoral fellows will be asked to draft parts of the research proposals and also to read and comment on draft proposals as part of their training.  BS and PhD students will be encouraged to apply for graduate and postdoctoral fellowships from the NSF and other external funding agencies.  As the teams collaborate, they will be in a better position to compete for  non-traditional and interdisciplinary funding opportunities.  Their successes in these awards will support these research activities beyond the life of this grant.
+
+% The point here is that SoReMo is recurring, and we will make the math students connect with it and be very RESEARCH ORIENTED. So yes it is broader impact but it should be research, first and foremost, like Chun had said before. So this description better belongs here. 
+PI  Petrovi\'c  leads a new, university-wide initiative called Socially Responsible Modeling, Computation, and Design (SoReMo).  It advocates for ethical, equitable approaches in computation, modeling, and design, contributing to the common good of Chicago and beyond through research and education initiatives at Illinois Tech. As there is \emph{no} sustained funding for this program, each department or college supports is when they are able. Hence this RTG will allow us to  train applied mathematics students with the projects relevant to SoReMo's mission.  Fellows are all of the following: idea creators, proposers, researchers, and deliverers. The faculty will guide the students or student teams throughout the semester. Undergraduate students will participate as standard SoReMo Fellows and will be trained on writing project proposals (see Section 2.4 for details). PhD students will be involved as Bridge Fellows - a new role we will create to connect SP Ellis' projects course. {\color{magenta}ROB ends this paragraph here. Please add a blurb :) } \marginpar{\color{magenta}TAG: Rob! I-course.}
+
+
+% WE DO NOT NEED THIS PART - IT DOES NOT ADD TO THE PROPOSAL. IT LITERALLY JUST SAYS WHY SOREMO IS DOABLE IN ITS BROAD SCOPE! :) I KEEP IT HERE AS COMMENT.
+% The impact of this project on students is not in what we ask, but in \emph{how} we ask it. Our operating philosophy is horizontal, aligning with the vision of the College of Computing in particular. We seek out, identify, and help students develop social responsibility in the context of various majors across campus. They spend time working on open-ended research projects which require them to connect concepts from within and outside their coursework, connect to the community, seek out best practices and propose potential solutions to the problem at hand. 
 
 
 
@@ -574,190 +535,200 @@ Members of research groups will actively apply for external funding to further s
 \subsection{Summer Program}    \label{sec:summer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Summer is a great time for intense research when faculty and students alike take a break from formal coursework.  Postdoctoral fellows will help RTG faculty to lead our  summer programs. {\color{magenta}HOW??}\marginpar{\color{magenta}TAG: Yuhan. }  
-
-
+Our planned summer research and training activities will be threefold: an undergraduate summer research program, summer school workshop for graduate students and postdocs, and research workshops in collaboration with institutes. To ensure program coherence and continuity, a faculty member will oversee each of the research activities each summer, jointly with a postdoctoral fellow and one or two PhD students who will help mentor the undergraduate students.  There will be a synergy between our summer program and the related research groups, which will continue to meet during the summer. 
 
 %\subsection*{Undergraduate summer program.}
-We have been running in-house summer research programs for undergraduate students since early $2000$.  Moreover, we will be running a three-year NSF-funded ten-week undergraduate summer research program.  The program will be targeted at rising third and fourth year BS students.  The topics chosen each year will come from one or two of the research projects in Section \ref{sec:researchproblems}.  We will support eight students each year, with around two-thirds being from Illinois Tech and the remaining being from other insitutes.  When recruiting students from other institutions, preference will be given to women and underrepresented minorities.  RTG funds
-will pay a stipend and room and board to participating students.  This will allow students to engage with one another and their mentors outside of research time.  
+Our department's faculty have been supervising in-house summer research programs for undergraduate students since the early 2000s; jointly, the PIs and SPs have supervised over a dozen {\color{red}HOW MANY? Sonja: 12 + ?: ? + ... PLEASE FILL IN YOUR NUMBERS!} undergraduates in summer research projects. 
+%\sout{Moreover, we will be running a three-year NSF-funded ten-week undergraduate summer research program. {\color{red}unclear. "we will be" - as part of RTG, right?organize.} The program will be targeted at rising third and fourth-year BS students.  The topics chosen each year will come from one or two of the research projects in Section \ref{sec:researchproblems}.  We will support eight students each year, with around two-thirds being from Illinois Tech and the remaining being from other institutes.  When recruiting students from other institutions, preference will be given to women and underrepresented minorities.  RTG funds will pay a stipend and room and board to participate students.  This will allow students to engage with one another and their mentors outside of research time.  The ten-week program will begin with tutorials given by postdoctoral fellows and experienced students introducing a few possible research topics.  Participants will do some background reading and choose their topic, either solo, or in a small group, within the first week or two.  Regular meetings will allow participants to present their progress, get feedback from the larger group, and hone their message for an end of program presentation. The program will be hosted at both Illinois Tech and Argonne.  In case of a pandemic event, the summer program will be held virtually.}
+ \YuhanNote{How many undergraduates will be recruited? Are they all from Illinois Tech? Will they split into the three research groups or just one or two of these?}
 
-The ten-week program will begin with tutorials given by postdoctoral fellows and experienced students introducing a few possible research topics.  Participants will do some background reading and choose their topic, either solo, or in a small group, within the first week or two.  Regular meetings will allow participants to present their progress, get feedback from the larger group, and hone their message for an end of program presentation. The program will be hosted at both Illinois Tech and Argonne.  In case of a pandemic event, the summer program will be held virtually.
+We will recruit XX rising third and fourth-year undergraduates ---\emph{especially those from underrepresented groups}.
+All undergraduate participants will be encouraged to write blogs \cite{Hig21a} during the program. The blogs will help them learn to articulate their research problem and their findings to a more general audience. The postdoctoral fellow and PhD
+students will meet with students weekly. During the regular meetings, the postdoc and PhD students will communicate with undergraduate students and check on student progress. They will also hold regular office hours throughout the week to be available when these undergraduate students have questions. In addition to this, PhD students will hold several short classes or tutorials sessions to prepare the undergraduates for the projects.
 
-A faculty member will oversee each summer with a postdoctoral fellow and one or two PhD students helping mentor the students.  There will be a synergy between our summer program and the related research groups, which will continue to meet during the summer, although perhaps less regularly.
+Illinois Tech also hosts an REU site, Summer Undergraduate Research Experience (SURE)  program, sponsored by NSF-DMS.  Our summer program will collaborate with SURE in the recruitment process to identify students interested in the research topics that we are offering. In addition, we will coordinate with SURE to have bi-weekly presentations, final presentation, poster day, and field trips to SAS Insitute Inc. and Argonne National Lab. 
 
-Summer Undergraduate Research Experience (SURE) is a program sponsored by the College of Computing, which is aimed at underrepresented minority students in Chicagoland.  The program collaborates with Chicago State University and Northeastern Illinois University, two minority serving institutions.  Our summer program will collaborate with SURE in the recruitment process to identify students interested in the research topics that we are offering. \FredNote{Yuhan, please add more!! How will Sure interact with Rtg.}
- 
+% A summer research program [SURE] (summer REU) so that graduate students, postdocs and PIs can participate in training undergraduate students (from outside of Illinois Tech) and prepare them for future research, collaboration with also IDEAL {\color{magenta}will return to edit this (Yuhan).}
+
+A subset of the PIs and SPs will apply for additional funding for participant support to organize a summer school and workshop for graduate students and postdocs, with rotating themes from the RTG. The goal is to have 1 or 2 summer schools during the course of the RTG, focusing on the interesecting topics between the three research themes. The PIs have prior experience in organizing, running, and securing funding for such graduate training programs, including  PI Petrovi\'c's AMS-MRC (Mathematical Research Community) in 2016 and a stand-alone NSF-funded summer school in 2019 co-organized with SP Stasi. {\color{red}Everyone: feel free to add others' prior experience as evidence that we can indeed do this, if you would like.}
+%so that the graduate students and postdocs can be exposure to research areas outside of IIT and participate in networking events during the time.
+%{\bf WE WILL NOT PUT PARTICIPANT SUPPORT HERE BUT WE WILL APPLLY FOR CONFERENCE GRANT TO DO THIS. SAY THAT RTG TEAM WILL ORGANIZE 1 OR 2 SUMMER SCHOOLS. }
+
+Finally, the PIs will continue their activities in organizing international research workshops. We will plan to use RTG themes to organize two- and five-day  research workshops, some at Illinois Tech, and others  as proposed events hosted at IMSI or Banff Internatinoal Research Station. The workshops' goal will be to both showcase the work of our trainees and bring in international experts to present and collaborate. We will pay special attention to diversity and inclusion when selecting participants of these events. 
+%Each year, each research group will organize a two-day workshop, either at Illinois Tech, in collaboration with IMSI or at an international research center such as the one in Banff.  The workshops will showcase our own results to others outside Illinois Tech and also let our trainees hear from international experts. The PIs have a track record of organizing such events at both IMSI and Banff.  {\color{magenta} we need to tune this a bit. getting into Banff is highly nontrivial and it's very unlikely we can run a workshop each year. Also they are not 2 days, they are typically 5 days. IMSI - probably; but I don't know that they ever host a two-day event. they certainly do not advertise that they do. So let's think about what is REALISTIC and just write that.}
+%And note that we have a track record of doing so. Sonja is organizing a 15-week program at IMSI *and* a Banff workshop in 2023, for example.}
+
+%\sout{Summer is a great time for intense research when faculty and students alike take a break from formal coursework. }  Postdoctoral fellows will help RTG faculty to lead our  summer programs. {\color{magenta}HOW??}\marginpar{\color{magenta}TAG: Yuhan. }  
+
  % , the Department of Applied Mathematics and Department of Computer Science
  
 %\subsection*{Graduate summer program} \FredNote{I do not understand this program and if or how it syncs with the undergraduate one.  Will our PhD students be pulled in two directions?} We will organize two-week summer programs for  graduate students, featuring (i) presentations by RTG faculty and collaborators about background and advances  in topics related to our research  projects; (ii) presentations by postdoctoral fellows and graduate students either about their research progress or describing specific articles related to the ongoing research projects. These will provide the general background information in the form accessible to undergraduate students.  A goal of   this summer program is to excite new students and inspire existing trainees in this RTG. 
-
+% *OH, WHATEVER*
 %We plan to have this summer program to be held at Illinois Tech in Years 1, 3 and 5, and at Argonne National Lab in Years 2 and 4. 
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Curricular and Co-Curricular Training}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-To support their research activities, student trainees will take courses and participate in co-curricular events common to all research groups.  PhD students and post-docs will be involved in teaching and mentoring. {\color{magenta}of whom? and what *is* "co-curricular" training??} 
+%{\bf REPHRASE THIS INTRODUCTORY PHRASE!} 
+%To support their research activities, student trainees will take courses and participate in co-curricular events common to all research groups.  PhD students and post-docs will be involved in teaching and mentoring. {\color{magenta}of whom??} 
 
-\subsection*{BS Students} 
+While our research seminars  typically feature early-career and student speakers, this grant will be used to institutionalize student and postdoc training  efforts and create an inclusive training environment with long-lasting impact. %(post-RTG).
+In particular,  PIs and SPs will  design and implement a  series of new events, building on  ongoing efforts, which are \emph{centered around student and postdoc training}: 
+%{\color{cyan}TO ADD-- IMPORTANT NOTES}: student training: ``elements of a research seminar". A series of events that will help bring our department together. These will be *new* events but will build on our past and ongoing efforts which were faculty initiated. 
 
-Each year we will recruit 3--4 new undergraduate trainees into our RTG.
-Beyond calculus, introductory ordinary differential equations, and linear algebra, undergraduates will be strongly urged to take MATH 350 Introduction to Computational Mathematics, MATH 475 Probability, and MATH 488 Ordinary Differential Equations and Dynamical Systems either before entering or early in their traineeships.  These courses will cover important ideas needed in their research.  The first two are required for the applied mathematics major.  
+\subsection*{Elements of a research seminar.} 
+\marginpar{\color{magenta}TAG: Hemanshu.}
+Approximately once per month, SP Kaul, jointly with another  faculty member (role rotating annually), will organize a graduate and advanced undergraduate student seminar event. This will be slightly different than a regular research seminar; students will present their work, or read and present background papers and open problems, or...{\color{magenta} Hemanshu, is this OK? please edit. reminds me of your discrete student talks... need a short paragraph. You have  lots of evidence of success with student speakers so far!} 
+%2) A graduate student seminar 
+%- once a month or so, keep it reasonable. 
+%Includes student training: `elements of a research seminar'. 
 
-MATH 350 so far has no coverage of random algorithms. An introduction to Monte Carlo methods will be added to MATH 350 to address this deficiency.
-PI Duan has taught MATH 488 multiple  times.  He will update the syllabus to integrate recent advances, such as computational and data science techniques for high dimensional dynamics. 
+\subsection*{Research project development workshops.} 
+\marginpar{\color{magenta}TAG: Despina. Is this OK? Please edit.} 
+In conjunction with the SoReMo program described above, SP Stasi will lead the development of a workshop, to take place once per semester, in which students will be \emph{trained on developing and writing short research proposals}. This will be open to all students at Illinois Tech, but aimed at undergraduates and graduate students in Applied Mathematics  and related majors. Students will be able to test their proposals by submitting their projects (team or individual) as SoReMo Fellow applications ..... The materials developed for this will be something the department can use post-RTG. {\color{magenta}and this is why I am asking FUNDS for this, so Despina can lead and create files and templates and documents we can keep using later. } We will store the materials on GitHub...e.g. https://github.com/SoReMo-org using info such as https://sondzus.github.io/SoReMo/  . 
+%3) undergraduate research and project proposals - once a semester or so. 
 
-Add Math 431 which is (Sonja's) course which has a heavy project and writing and refereeing component! writing grading rubrics and all. 
+%\subsection{Communication Skills and Career Coaching -- PUT THIS WITHIN CO-CURRICULAR}
+%\subsection*{Colloquium} The colloquium mentioned above, although aimed in part at BS students, will also have a number of activities aimed at PhD students and postdoctoral fellows as well.  Some of these are mentioned below.
+\subsection*{Communication Training}
+Communication is crucial to a scientist, and the crafting of the message depends on the audience:  research group, journal referees, proposal evaluation panel, students, and/or the general public. We will focus on three ways of developing trainees' communication skills: 
 
-Trainees will enroll in MATH 491 Reading and Research for one or more semesters to obtain credit for research being done during the academic year.  Trainees will be welcomed into our own summer program, but will also be encouraged to spend another summer in an REU or internship elsewhere to gain a broader experience.
+1. General public audience.  C2ST (see the introduction) will run a yearly workshop consisting of three modules of three hours each duration on communication to the public. The topics will include speaking to the general public, social media engagement, writing for the general public.  %This will be a continuation of the undergraduate RTG event mentioned above but include PhD students and postdoctoral fellows as well.
+We will develop this training module jointly with the Kaplan Institute for Tech Entrepreneurship, through its existing partnership with SoReMo. \marginpar{\color{red}Fred can you get a letter from C2ST? we mention them more than once.}
 
-We will create a monthly RTG undergraduate evening event for our applied math majors---both potential and existing trainees.  In early fall, we will give a presentation describing the overall RTG program, with the goal of recruiting students. Subsequent meetings will include presentations from   career services, campus student groups that promote research and innovation, such as the Camras Scholars, Intinium, the Undergraduate Research Journal at IIT, and also presentations from Argonne and IMSI advertising their programs. 
-{\color{magenta}can also add an "rtg section" to the soremo journal - it has DOIs and all! and is a refereed publication. Gorjana will oversee.} 
+2. Broad scientific audience. %{\bf Communication training.}
+This part will be developed jointly with the SoReMo program. Fellows engage in project shareouts twice a month in a public Forum. They update their peers, faculty, and visiting students  about their progress, questions, issues, revelations, and stumbling blocks. We  train students on how to effectively design and deliver pitch-style project summaries.
 
-By late fall, we will give brief presentations of the research topics of the RTG program, which will serve as an introduction of faculty members of the different
-groups. Meetings in the the fall and winter will concentrate on training and helping students apply for PhD programs, REUs, and research related internships. 
+3. Expert audience. %conferences - expert audience. 
+The RTG will provide travel support to trainees to  present   and to network at relevant conferences. 
+They will have the opportunity to participate in local and regional activities such as the Chicago Area Undergraduate Research Symposium (CAURS), the Chicago Area SIAM Student Conference, SIAM Central Section meetings, Midwest Dynamical Systems Conferences, Midwest Numerical Analysis Day,  Midwest Probability Colloquium, and workshops sponsored by Argonne and IMSI. Trainees presenting will practice their talk  with PIs and peers.
+{\color{red}MOVE THIS SENTENCE TO THE BUDGET JUSTIFICATION DOCUMENT AND DELETE FROM HERE: We estimate for RTG students to receive support to one conference per year in the final 2 years of their studies and one conference per year to postdoctoral fellows. } 
 
 
+\subsection*{Publishing and writing.} Senior graduate students and postdocs will gain experience with the full publication process using our in-house formal research journal hosted by the Galvin Library. Trainees will be given opportunity to act as guest editors, referees, and production editor process participants for the SoReMo journal publication, handling the math and data science related publications that come through. The journal handles about a dozen submissions a year, so this is a reasonable workload for training purposes. PI Petrovi\'c and SP Popovi\'c will oversee this  part. 
+%-- this is also communication (written) but it is more as it gives trainees FULL PUBLICATION PROCESS experience! {\color{magenta}SONJA --- rewrite this to incorporate students as guest editors, referees, production process participants, as well as authors. ---} Each fellow or team submits a final technical report, to be readable by a general audience, to our in-house journal publication—the SoReMo journal–hosted by our own Galvin Library. This is a formal publication with DOIs for each article. The process mimics a ‘real’ academic journal and the reports undergo a round of anonymous reviews and revisions before formally accepted and formatted for publication. This gift will help streamline this publication process by offloading some of the editing work to student trainees who will gain experience and training in editing and publication.
 
-\subsection*{PhD Students}
 
+\subsection*{Curriculum development and synergy} 
+
+Applied mathematics undergraduate students are required to take a number of courses which fit well with our RTG program; these include MATH 350 Introduction to Computational Mathematics and MATH 475 Probability. {\color{red}$\leftarrow$ please list those courses here; verify this list.}  
+\sout{KEEP?? MATH 350 so far has no coverage of random algorithms. An introduction to Monte Carlo methods will be added to MATH 350 to address this deficiency.} 
+
+Undergraduate trainees will additionally be taking the following existing courses which fit well with the RTG themes: MATH 488 Ordinary Differential Equations and Dynamical Systems, MATH 431 Computational Algebraic Geometry, MATH XXX Discrete?{\color{red}Hemanshu? Michael? Rob? Help.}
+MATH 431 is a dual-deliver course also for graduate students and it has  a heavy project and writing and refereeing component.  Trainees will also enroll in MATH 491 Reading and Research for one or more semesters to obtain credit for research being done during the academic year.  Trainees will be welcomed into our own summer program, but will also be encouraged to spend another summer in an REU or internship elsewhere to gain a broader experience.
+%\subsection*{BS Students}  Each year we will recruit 3--4 new undergraduate trainees into our RTG. Beyond calculus, introductory ordinary differential equations, and linear algebra, undergraduates will be strongly urged to take MATH 350 Introduction to Computational Mathematics, MATH 475 Probability, and MATH 488 Ordinary Differential Equations and Dynamical Systems either before entering or early in their traineeships.  These courses will cover important ideas needed in their research.  The first two are required for the applied mathematics major.   PI Duan has taught MATH 488 multiple  times.  He will update the syllabus to integrate recent advances, such as computational and data science techniques for high dimensional dynamics. 
+%Add Math 431 which is (Sonja's) course which has a heavy project and writing and refereeing component! writing grading rubrics and all. 
+
+
+% THIS SEEMS TO BE COVERED BY THE RESEARCH SEMINAR. I'M DELETING IT: 
+% By late fall, we will give brief presentations of the research topics of the RTG program, which will serve as an introduction of faculty members of the different groups. Meetings in the  fall and winter will concentrate on training and helping students apply for PhD programs, REUs, and research related internships.  
+
+%\subsection*{PhD Students}
 %The majority of our PhD recipients’ first jobs are in non-academic positions. We view our success in placing students in a broad range of organizations as a unique and positive indicator, which we want to maintain. The research topics and interdisciplinary approach should enhance opportunities for jobs in industry and national laboratories for our RTG students and at the same time increase the number of PhD recipients going into high quality postdoctoral positions.
+%We will enroll 3--4 new PhD trainees each year, and each trainee will be supported for up to three years, typically their first three year.  While supported by RTG traineeships, these PhD students will be released from other duties to concentrate on their coursework, research, and other RTG activities.  For example, bright students that are lacking some crucial mathematical background may take some upper division undergraduate courses.  
 
-We will enroll 3--4 new PhD trainees each year, and each trainee will be supported for up to three years, typically their first three year.  While supported by RTG traineeships, these PhD students will be released from other duties to concentrate on their coursework, research, and other RTG activities.  For example, bright students that are lacking some crucial mathematical background may take some upper division undergraduate courses.  
+PhD student trainees will complete the foundational courses in analysis, computation, and statistics that are already part of our PhD program.  In addition, they will be urged to take one or more of the following courses which serve the RTG research themes.  
+%{\bf \color{red} what is the value of listing existing course descriptions?}
 
-PhD student trainees will complete the foundational courses in analysis and computation required by our PhD program.  In addition, they will be urged to take one or more of the following courses.
-
-\subsubsection*{MATH 544 Stochastic Dynamics}
+\emph{MATH 544 Stochastic Dynamics}.{\color{red}IS THIS STILL NEEDED?}
 We will revise this graduate course  incorporating topics on  high dimensional stochastic systems via data-driven algorithms.  The course will fill a gap by addressing simulation methods for nonlocal equations over high dimensional domains.
 
-\subsubsection*{MATH 561 Algebraic and Geometric Methods in Statistics} 
+\emph{MATH 561 Algebraic and Geometric Methods in Statistics}. Algebraic structures are present in a broad variety of statistical contexts, and offer a direct link to the randomized computational tools for Research Theme 2. The course offers an overview of fundamental theoretical constructions relevant to some of the more popular recent applications in the field. This course first ran Spring 2023 as a graduate elective, with 20 enrolled graduate students. 
 
-\subsubsection*{MATH 565 Monte Carlo Methods} Originally designed for mathematical finance majors, we will revise this course to include topics such simulation of (partial) differential equations with random coefficients.  The course already introduces quasi-Monte Carlo methods, a powerful alternative for speeding up expensive Monte Carlo calculations.  This course will also introduce students to open source software packages such as SciPy \cite{virtanen2020scipy}, QMCPy \cite{QMCPy2020a} (authored by PI Hickernell and his group), and DOLFIN \cite{Dolphin12}. 
+\emph{MATH 565 Monte Carlo Methods}. Originally designed for mathematical finance majors, we will revise this course to include topics such simulation of (partial) differential equations with random coefficients.  The course already introduces quasi-Monte Carlo methods, a powerful alternative for speeding up expensive Monte Carlo calculations.  This course will also introduce students to open source software packages such as SciPy \cite{virtanen2020scipy}, QMCPy \cite{QMCPy2020a} (authored by PI Hickernell and his group), and DOLFIN \cite{Dolphin12}. 
 
 % \subsubsection*{New Course: Introduction to Mathematical Theories of Complex Fluids} 
 % Complex fluids are ubiquitous in our daily life and important in many industrial, physical and biological applications. Studying these materials requires a wide range 
 % of tools and techniques for different disciplinary, even within mathematics. A new upper division undergraduate/graduate course will be developed on mathematical theories of complex fluids. The course will be self contained and covers basic mechanics, non-equilibrium thermodynamics, multi-scale modeling and analysis with applications in engineering and biology. The course will fill the gaps between traditional mathematical courses and engineering courses.
 
-\subsubsection*{New Course: Scientific Machine Learning}
+\emph{New Course: Scientific Machine Learning}. {\color{red}Can this paragraph please be several lines SHORTER?} 
 Machine Learning has become a powerful and popular tool in categorization, classification, and regression.  By combining the prior scientific knowledge of domain knowledge, scientific machine learning, a new branch of machine learning methodology, can achieve improved extrapolation (prediction) capability with smaller training data sets than traditional machine learning methods.  This course will teach state-of-the-art scientific machine learning methods, including but not limited to Physics Informed Machine Learning, Neural ODEs, Bayesian ODEs, etc.  Moreover, it focuses not only on the theoretical aspects of the machine learning tools, but also on the algorithmic and applications of machine learning.  Hence, the students are well-prepared to future challenges in both academic and industrial applications. 
 
  
-\subsubsection*{New Course: Introduction to Mathematical Framework for Quantum Mechanics} We will build this course from  a   undergraduate course   taught by team member Carlo Segre, and another one taught by our Research Professor Stephen Wiggins (available on YouTube). PI Duan   taught a minicourse in Quantum Dynamics \cite{Gutzwiller1990ChaosIC, Holland1993TheQT,Lindgren2019QuantumMC,Micha2006QuantumDW} in 2019 and 2020 for graduate students and his collaborators.  We will invite our collaborators to co-teach this course. 
-The YouTube format provides the opportunity to engage the students in an active learning format where they view the “short" lectures ahead of time and the in person class time  also includes  questions, discussions, and problem solving. Stephen Wiggins will co-teach this course with us and his letter of collaboration is a supplementary document.
+%\sout{\subsubsection*{New Course: Introduction to Mathematical Framework for Quantum Mechanics} We will build this course from  a   undergraduate course   taught by team member Carlo Segre, and another one taught by our Research Professor Stephen Wiggins (available on YouTube). PI Duan   taught a minicourse in Quantum Dynamics \cite{Gutzwiller1990ChaosIC, Holland1993TheQT,Lindgren2019QuantumMC,Micha2006QuantumDW} in 2019 and 2020 for graduate students and his collaborators.  We will invite our collaborators to co-teach this course.  The YouTube format provides the opportunity to engage the students in an active learning format where they view the “short" lectures ahead of time and the in person class time  also includes  questions, discussions, and problem solving. Stephen Wiggins will co-teach this course with us and his letter of collaboration is a supplementary document.}
 
-\subsubsection*{New Course: Analysis of Network Data}
-book by Eric Kolaczyk. Syllabus pretty much drafted already. plays well with  research theme *and*  complements  new course 561 which first ran Spring 2023 as a graduate elective with 20 enrolled graduate students(!). 
+\emph{New Course: Analysis of Network Data}, using \cite{KolaczykBook2017} as a main text. Relational data in the form of a network arises in many applications. The course covers the essential statistical inference procedures for analyzing such data, including their shortfalls and open problems that remain to be addressed to properly analyze such data. The computational aspect to the course explores some of the practical questions from  typical applications including  social and information networks. 
 
-{\color{cyan}This is a 5-year plan for PhD  trainees?It should be written *before* all these new courses...}
-By the end of Year 1, PhD trainees will enroll in one of the groups and be assigned a faculty mentor from the corresponding team. They will   help with the summer programs.   Year 2
-will still be focused on completing necessary coursework.
-Ideally, PhD students will do a research-related internship during the summer of Year 2 or Year 3. Students who do not have
-a summer internship will do in-house research and participate in the RTG summer program
-by giving lectures and mentoring BS students. By the end of Year 3, RTG students
-should pass qualifying exams and present their PhD thesis proposal. They should also have participated in one   workshop or presentation run by the Center for Learning Innovation to prepare them for teaching experience. In Year 4, students will be fully engaged in their dissertation work straddling one or more of our research project areas. They will also teach a section of Calculus with the support of a teaching
-mentor, who will observe a few classes and write a report. The summer of Year 4 and all of Year 5 should focus on completing their dissertation and applying for jobs and postdoctoral fellowships.
 
-In total, PhD student trainees will have at least two semesters of either supervised teaching or research-related internship or both.  Internships may be at at Argonne or other government labs and or at data science companies, such as SigOpt (now a part of Intel) whose Head of Engineering, our alum Michael McCourt, has provided a letter  of collaboration as a supplementary document.\marginpar{\color{magenta}TAG: Chun. verify letter.} 
+\subsection*{Postdoctoral Fellows: Research and Teaching Synergy}
+Postdoctoral fellows must become independent researchers with a well-defined research program who can identify interesting, accessible research problems, write research proposals and publications, and teach others.  To hone their teaching skills, postdocs will teach one course per semester. They will help lead the summer programs and research group meetings, prepare and give tutorials on background material, assist in giving minicourses, and help organize workshops.  In these activities they will be mentored by faculty. A detailed postdoctoral mentoring plan is included with this proposal. {\color{red}QUESTION: does this proposal need to have a postdoctoral mentoring plan as a separate document? probably. do we have that?}
 
-\subsection*{Postdoctoral Fellows}
-Postdoctoral fellows must become independent researchers with a well-defined research program who can identify interesting, accessible research problems, write research proposals and publications, and teach others.  To hone their teaching skills, postdocs will teach one course per semester. They will help lead the summer programs and research group meetings, prepare and give tutorials on background material, assist in giving minicourses, and help organize workshops.  In these activities they will be mentored by faculty.
-
-\subsection*{Minicourses}
-Our collaborators, at Argonne and other institutions, and some visitors will offer minicourses (each with 10 lecture hours within 1-2 weeks, preferably in summer) to supplement regular courses and to expose trainees to the frontiers of our research projects. Possible minicourses include  Machine Learning on Encrypted Data (Year 1),  Non-equilibrium Statistical Mechanics (Year 2),   Bohmian Quantum Dynamics (Year 3), High Dimensional Numerical Analysis (Year 2 or 3), and Foundation of Machine Learning (Year 3 or 4), among others. 
-{\color{magenta}oh geez. "some visitors". :-/ Can we also add workshops at IMSI. Sonja isn't the only one running a long program; we have other faculty organizing there?} 
-
-\subsection{Communication Skills and Career Coaching}
-%\subsection*{Colloquium} The colloquium mentioned above, although aimed in part at BS students, will also have a number of activities aimed at PhD students and postdoctoral fellows as well.  Some of these are mentioned below.
-\subsection*{Training for Communication}
-Communication is crucial to a scientist, and the crafting of the message depends on the audience:  research group, journal referees, proposal evaluation panel, students, and/or the general public.  Given the public's frequent misunderstanding of science, we will educate our trainees on how to reach them.  C2ST (see the introduction) will run a yearly workshop consisting of three modules of three hours each duration on communication to the public.  The topics will include speaking to the general public, social media engagement, writing for the general public.  This will be a continuation of the undergraduate RTG event mentioned above but include PhD students and postdoctoral fellows as well.
-
-The RTG will provide travel support to trainees to  present   and to network at relevant conferences. We estimate for RTG students to receive support to one conference per year in the final 2 years of their studies and one conference per year to postdoctoral fellows.  In addition, trainees will have the opportunity to participate in local and regional activities such as the Chicago Area Undergraduate Research Symposium (CAURS), the Chicago Area SIAM Student Conference, SIAM Central Section meetings, Midwest Dynamical Systems Conferences, Midwest Numerical Analysis Day, and Midwest Probability Colloquium, and workshops sponsored by Argonne and IMSI. Trainees presenting will give a practice talk to their research group.
-
-\subsection*{Career Coaching}
-In every October, one or two seminar sessions will cover applying for REUs, graduate schools, and jobs in academia and industry. These sessions will draw upon the experience of our faculty, experienced trainees, and alumni, such as Dr.\ Michael McCourt of SigOpt, a company focusing on Bayesian optimization.  A yearly colloquium presentation  will be offered in September by one of the PI/Co-PIs or experts on writing research proposals. Faculty and postdoc mentors will comment on draft r\'esum\'es,  applications, and proposals.  
-
+\subsection*{Mini-courses} 
+PIs' collaborators, including SP Leyffer, will offer mini-courses in the form of a series of lectures to supplement regular coursework of interest to RTG trainees. These will be open to all interested students, hence impacting the department more broadly. 
+We plan to organize one such mini-course per year, with possible topics including: 
+%Our collaborators , at Argonne and other institutions, {\color{magenta}SONJA add Sven's lectures etc.} and some visitors will offer minicourses (each with 10 lecture hours within 1-2 weeks, preferably in summer) to supplement regular courses and to expose trainees to the frontiers of our research projects. Possible minicourses include 
+Mixed-integer nonlinear optimization, Nonlinear optimization and machine-learning (Year 1 or 2), 
+{\color{red}EDIT THESE!!$\mapsto$} Machine Learning on Encrypted Data (Year 1),  Non-equilibrium Statistical Mechanics (Year 2),   Bohmian Quantum Dynamics (Year 3), High Dimensional Numerical Analysis (Year 2 or 3), and Foundation of Machine Learning (Year 3 or 4). 
+%{\color{magenta}oh geez. "some visitors". :-/} 
+%{\color{magenta}Sonja: Sven had said this: I'd be happy to help as Senior Personnell. There are many ways in which we could enhance training from internships to lectures, or courses across the two institutions. I just had the SIAM Student Chapter from IIT visit, and I wll give a careers talk at IMSI later this Spring.  There is also  the network that Mihhail Berezowski has bult at Embry: they pair groups of (undergrad) students with industry projects, see https://mberezovski.com/}
 
 %\FredNote{Do we still want this?  We have a lot going on.} Led by RTG postdocs and graduate students, we will organize RTG  weekly   Colloquia ``Frontiers in Applied Mathematics",  aimed at fostering collaboration between all RTG teams and exposing new research advances to trainees and other members of our department and beyond.   Once a year, the RTG  will organize a Colloquium  under the umbrella of the Illinois Tech SIAM Student Chapter.  
 
 
 
- 
-\subsection{Outreach}
-\subsection*{Socially Responsible Modeling, Computation, and Design
-(SoReMo)}
-{\color{magenta} ***SoReMo does NOT equal outreach.***  SoReMo is directly student training AND outreach. we will also involve phd students and postdocs!} 
-[OLD TEXT:] This new initiative at Illinois Tech led by Sonja Petrovi\'c (Applied Math) advocates for ethical, equitable approaches in computation,
-modeling, and design, contributing to the common good of Chicago and
-beyond through research and education initiatives at Illinois Tech.
- We will incorporate the trainees with the projects that are relevant to aspects of social responsibility and could have impact to social justice, including those on the climate dynamics that is crucial in understanding the global warming and environment changes, the biology systems that are related to disease prevention and public health,  and the engineering applications on battery, fuel cell, energy storage and clean energy.
-
-{\color{magenta}IMPACTS OF SoReMo}
-SoReMo envisions the future of education to be holistic. We are here to empower students to enact the positive societal change they are passionate about within Illinois Tech, Chicago, and beyond. This funding is mission-critical for SoReMo due to our operating model. 
-Specifically, this gift is being used in 2022/23 solely to support the SoReMo student fellows in paying them a research stipend to carry to their projects. Student Fellows are the core of SoReMo, as they are all of the following: idea creators, proposeres, researchers, and deliverers. The faculty are here to select projects most likely to succeed, guide the students or student teams throughout the semester with regards to resources, other relevant research, cross-disciplinary connections, or issues that come up along the way in the research cycle. Faculty act as idea soundboards, research resources, scoping \& verification. 
-
-The impact of this project on students is not in what we ask but in how we ask it. 
-Our operating philosophy is horizontal, aligning with the vision of the College of Computing in particular. We seek out, identify, and help students develop social responsibility in the context of various majors across campus. They spend time working on open-ended research projects which require them to connect concepts from within and outside their coursework, connect to the community, seek out best practices and propose potential solutions to the problem at hand. 
-
-While specific project outcomes are heavily dependent on the projects being carried out, the following are standard outcomes across all student projects that summarize the impact of this funding to each and every fellow who is funded by SoReMo: 
-
-Data literacy and engagement with data
-There isn’t a project that does not deal with data, whether it be quantitative or qualitative. In fact, SoReMo expands the view of what traditionally constitutes data-driven disciplines. These include: applied mathematics, statistics, computer science, data science, design, social sciences, humanities, architecture. Specifically, we integrate mathematical modeling, computation, data science, the human aspect, and design to make an impact. Sometimes the data is quantitative, sometimes qualitative. Sometimes it is gathered through surveys, sometimes it is analyzed with statistical tools. Ultimately, though, the data is presented and discussed how it can be used for the common good. 
-
-Communication training
-Each fellow develops their communication skills, focusing on multidisciplinarity and multimodal delivery. Every Forum, which meets twice a month, fellows engage in project shareouts. They update their peers as well as any faculty members present or any visiting students (who come from time to time to join the discussion) about their progress, questions, issues, revelations, and stumbling blocks. We also train students on how to effectively design and deliver pitch-style talks, two-to-three-minute summaries of their projects. 
-
-Publishing and writing
-Each fellow or team submits a final technical report, to be readable by a general audience, to our in-house journal publication—the SoReMo journal–hosted by our own Galvin Library. This is a formal publication with DOIs for each article. The process mimics a ‘real’ academic journal and the reports undergo a round of anonymous reviews and revisions before formally accepted and formatted for publication. This gift will help streamline this publication process by offloading some of the editing work to student trainees who will gain experience and training in editing and publication.
-
-Impact on the community and interdisciplinary dialogue at Illinois Tech 
-..... If a project engages in a topic that is related to IIT campus and community, the outcomes are generally translated to action the semester following the project. 
-
-In general, the projects impact society by engaging in conversations about difficult issues and proposals of interdisciplinary nature on how to solve them. 
-
-Two of the three spring 2023 projects are directly impacting our community: one studies the effect of redlining to health in the context of environmental justice, and the other studies how to improve outcomes for a particular Chicago community (Englewood) which is trying to be more green in the context of the recycling issues Chicago faces as a city.  {\color{magenta}can add more on Barien's project as well as Harrison's on the impact on on-campus life, international student onboarding, etc.} 
+\subsection*{Career Coaching}
+Every October, one or two seminar sessions will be dedicated to applying for REUs, graduate schools, and jobs in academia and industry. These sessions will draw upon the experience of our faculty, experienced trainees, and alumni, such as Dr.\ Michael McCourt of SigOpt, a company focusing on Bayesian optimization.  A yearly colloquium presentation  will be offered in September by one of the PI/Co-PIs or experts on writing research proposals. Faculty and postdoc mentors will comment on draft r\'esum\'es,  applications, and proposals.  
+The department has organized similar events in the past; namely, 
+%We have evidence we have done this in the past:
+\marginpar{\color{magenta}TAG: Rob and/or Despina} 
+in recent years, SP Ellis and Stasi have worked closely with the SIAM student chapter (???) to organize.... a workshops on job opportunities (both academia and industry?)
+%/grant writing for senior graduate students and postdocs;  
+We should invite alumnus for homecoming events to discuss their jobs/career path after graduation and such. {\color{red}***we do this...Menger day? please fill in***}
 
 
-\subsection*{Workshop on Diversity, Equity and Inclusion (DEI)}
-Building on our collaboration with Argonne, we plan to co-organize a regularly DEI workshops with the Division of Mathematics and Computer Science Division, whose director, Valerie Taylor, is an African American female, and with Illinois Tech's  Vice President for DEI.  The workshop will consist of two parts: i) encouraging underrepresented groups to pursue STEM careers, and ii) teaching faculty, postdocs, and students how to support and advocate for underrepresented groups.  The frequency will be set so that virtually all trainees will participate at least once.{\color{magenta}This seems all artificial.} 
 
-\subsection*{Public Lectures} We will organize yearly public lectures in collaboration with  C2ST (see Section 1) to highlight the applications of   our research and excite our audience about the possibilities of mathematics.  {\color{magenta} this needs more detials / evidence. budget? letter? at least a draft of a plan?? *Fred* } 
 
-At least once during the 5-year window, we will co-sponsor a distinguished public lecture  on a topic that falls within the theme of complex dynamical systems.  The distinguished visitor will come to Chicagoland for a few days, and in addition to the public lecture, also spend time meeting with our RTG faculty and trainees, give a research talk, and share his or her wisdom on being a successful applied mathematician. 
+
+
+%\subsection*{Workshop on Diversity, Equity and Inclusion (DEI)}
+%\sout{Building on our collaboration with Argonne, we plan to co-organize a regularly DEI workshops with the Division of Mathematics and Computer Science Division, whose director, Valerie Taylor, is an African American female, and with Illinois Tech's  Vice President for DEI.  The workshop will consist of two parts: i) encouraging underrepresented groups to pursue STEM careers, and ii) teaching faculty, postdocs, and students how to support and advocate for underrepresented groups.  The frequency will be set so that virtually all trainees will participate at least once.}{\color{magenta}$\leftarrow$ This seems all too artificial. Kill paragraph.} 
+
+\subsection*{Public Lectures} We will organize a \sout{\color{red}yearly} public lecture in collaboration with  C2ST (see Section 1) to highlight the applications of   our research and excite our audience about the possibilities of mathematics. 
+%{\color{magenta} this needs more detials / evidence. budget? letter? at least a draft of a plan?? *Fred* } {\color{magenta}Sonja: why dont' we rely on some other team at IIT already working on this? for the public lecture we say we will organize a satelite event that helps plug in our rtg. if she's willing.? instead of running our own public lecture. OR why don't we just link this to Menger lecture??? MAKE IT DOABLE.}
+% At least once during the 5-year window, we will co-sponsor {\bf WITH WHOM?} a distinguished public lecture 
+A public lecture on a topic that falls within the themes of the RTG will be co-sponsored  with the department's Menger Day event. {\color{red}PLEASE VERIFY THIS IS OK WITH EVERYONE.}
+%complex dynamical systems.  The distinguished visitor will come to Chicagoland for a few days, and in addition to the public lecture, also spend time meeting with our RTG faculty and trainees, give a research talk, and share his or her wisdom on being a successful applied mathematician. 
 %A letter of collaboration from C2ST is uploaded as a supplementary document.  
 
 %\subsection*{Website and Newsletters} 
 %With the assistance of a student worker, we will establish a website for this RTG that serves both an inward facing and an outward facing function.  RTG trainees will help keep the news, events, publications, and bios current.  They will also edit a semi-annual electronic newsletter, featuring our education, research  and outreach  activities. 
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Recruitment and Retention Plan} \label{sec:RandR}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This RTG involves BS and PhD students and postdocs, collectively referred to as trainees.  The PIs have a track record of mentoring  applied mathematicians at all stages of their careers.  In the past five years, we have supervised research for over a dozen undergraduate students, many of whom have published their research and entered PhD programs at top 50 universities. One faculty member has also supervised a high school student conducting research.  The PIs have  mentored dozens of PhD students, some whom have entered academic positions at research universities, and others whom have entered research related jobs in industry and national laboratories. PI Li has mentored an African American female PhD student and an Hispanic PhD student. PI Hickernell is mentoring an African American male PhD student.  The PIs have  mentored a number of postdocs, who have been attracted to the vibrancy of our research groups. PI  Pelsmajer, a racial minority, will lead our effort to 
-recruit African-American, Hispanic, women and other minority students.
 
+\marginpar{SHORTEN THIS PARAGRAPH, TEXT CAN BE TIGHTER} This RTG involves BS and PhD students and postdocs, collectively referred to as trainees.  The PIs have a track record of mentoring  applied mathematicians at all stages; namely, in the past five years, we have supervised research for over a dozen undergraduate students, many of whom have published their research and entered PhD programs at top 50 universities. One faculty member has also supervised a high school student conducting research.  The PIs have  mentored dozens of PhD students and several postdoctoral researchers, some of whom have entered academic positions at research universities, while others research related jobs in industry and national laboratories. Racial and gender minorities are represented among our current and recent trainees. 
+%PI Li has mentored an African American female PhD student and an Hispanic PhD student. THAT WAS SHUWANG, NOT XIAOFAN, I THINK? 
+%PI Hickernell is mentoring an African American male PhD student.  The PIs have  mentored a number of postdocs, who have been attracted to the vibrancy of our research groups. % PI  Pelsmajer, a racial minority, will lead our effort to  recruit African-American, Hispanic, women and other minority students. !!OMG THIS IS TERRIBLE. Anyway, he is not a PI any more. 
 At present, our department has about \numUG BSs, \numPhD PhD students, and \numPostDoc postdocs.  This RTG will increase the numbers of students and postdocs entering applied mathematics research careers through Illinois Tech and to increase the diversity of our student body.  We will do this by strengthening our recruitment and retention efforts and providing enhanced research training.
+{\color{red}the following paragraph should be summarized and added here, this is copy/paste:} During the past five years, our department has trained on average 55 BS students yearly, and these BS graduates have gone to PhD programs in university such as UCLA, NYU, UIUC or found jobs in companies such as Intel, Samsung and Twitter. Our group of RTG PIs has trained 3 PhDs per year (one quarter of them are female or minority; one third go to academia and two thirds go to industry)  and 3 postdocs per year (one third are female; all go to academia).  See supplementary Trainee Data and Quantitative Demographic Data. 
+
+\subsection*{This needs some work- it is about recruitment. Please edit.} 
+{\color{red}EVERYONE: take a look at this paragraph. Do we still want this? too much going on. Someone please take over leading it [we need a dedicated PI who will do this], or delete.:) it fits well in the recruitment plan.}
+We will create a monthly RTG undergraduate \sout{\color{red}evening - evening???}  event for our applied math majors---both potential and existing trainees.  In early fall, we will give a presentation describing the overall RTG program, with the goal of recruiting students. Subsequent meetings will include presentations from   career services, campus student groups that promote research and innovation, such as the Camras Scholars, Intinium, the Undergraduate Research Journal at IIT which is a formal publication by the Galvin Library's publication arm, %{\color{magenta} which has DOIs! it's a real student publication; our postdocs  and Grad trainees should get involved in editorial work too! and it supports the broader IIT mission - this will be a big plus, i think.}, 
+and also presentations from Argonne and IMSI advertising their programs. 
+%{\color{magenta}can also add an "rtg section" to the soremo journal - it has DOIs and all! and is a refereed publication. Gorjana will oversee.} 
+
 
 \subsection*{BS Students}
 Our Department  offers a BS in applied mathematics a variety of specializations as well as options for double majors and co-terminal joint BS-MS degrees. We also offer a BS in statistics and MS in data science.  Some of our majors enter as transfers from junior colleges and some transfer to our major or add our major as a double major after entering Illinois Tech.
- 
-Each year we will recruit 3--4 new BS applied mathematics or statistics students into the RTG, normally in the middle of their second year standing (as measured by credits obtained).  This may correspond to earlier than their second year at Illinois Tech due to AP or transfer credits.
+ %Each year we will recruit 3--4 new BS applied mathematics or statistics students into the RTG, normally in the middle of their second year standing (as measured by credits obtained).  This may correspond to earlier than their second year at Illinois Tech due to AP or transfer credits.
+All majors must take the semester course MATH 100 Introduction to the Profession. {\color{magenta}and what is DS100 and should Rob add something?}  We will devote a  couple of sessions research opportunities in the mathematical sciences and introduce our RTG program. \sout{As an aside, a Latina first year student who listened to Hickernell's presentation in MATH 100 several years ago did undergraduate research under him as well as under another faculty member, received her BS/MS degree from Illinois Tech and is now pursuing a PhD at the University of Illinois at Chicago.} 
 
-All majors must take the semester course MATH 100 Introduction to the Profession.  We will devote a  couple of sessions research opportunities in the mathematical sciences and introduce our RTG program. As an aside, a Latina first year student who listened to Hickernell's presentation in MATH 100 several years ago did undergraduate research under him as well as under another faculty member, received her BS/MS degree from Illinois Tech and is now pursuing a PhD at the University of Illinois at Chicago.
-
-To attract and retain talented and motivated students, we will provide opportunities for exploring mathematics outside the classroom through our active AWM and the SIAM student chapters.  Each year we will co-sponsor with these chapters a session introducing students to our RTG and advising them on how to apply.  The introductory session will feature existing trainees describing their experiences. It may coincide with one of our activities showcasing our research.
+To attract and retain talented and motivated students, we will provide opportunities for exploring mathematics outside the classroom through our active  SIAM student chapter.  Each year we will co-sponsor with these chapters a session introducing students to our RTG and advising them on how to apply.  The introductory session will feature existing trainees describing their experiences. It may coincide with one of our activities showcasing our research. {\color{red}edit this and incorporate:} Interaction with the SIAM student chapter at IIT?  They have organized social events (like visiting the Argonne Lab, attending CSO etc.), my favorite theorem (a good way for the students to present a talk), lunch with professors, etc.
 
 To increase the diversity and preparedness of the pool of undergraduate students, we will collaborate with our admissions office to reach out to the nearby high schools and junior colleges, which serve a higher proportion of underrepresented minority students.  We will also pitch our RTG to the high school students attending Illinois Tech's summer programs to attract them to apply to Illinois Tech as applied mathematics majors.
 
-To retain our undergraduate trainees, we will assign each a faculty mentor as well as an experienced PhD student or postdoc mentor.  This will be on top of our existing departmental advising.  The mentors will meet individually with each BS student at least once per term to discuss progress, course selection, research plans, summer plans, and career plans.  The mentors will also make themselves available to help the trainees with coursework or research questions.  PI Pelsmajer served for many years as the Associate Chair and Director of Undergraduate Studies. He will coach our mentors on how to fulfill their responsibilities well.
+To retain our undergraduate trainees, we will assign each a faculty mentor as well as an experienced PhD student or postdoc mentor.  This will be on top of our existing departmental advising.  The mentors will meet individually with each BS student at least once per term to discuss progress, course selection, research plans, summer plans, and career plans.  The mentors will also make themselves available to help the trainees with coursework or research questions. % PI Pelsmajer served for many years as the Associate Chair and Director of Undergraduate Studies. He will coach our mentors on how to fulfill their responsibilities well.
 
 \subsection*{PhD students} 
 Our department has a single PhD program in applied mathematics with five emphases: applied analysis, discrete mathematics, computational mathematics, statistics, and stochastics.  Faculty strength covers all five areas and our research projects draw from all of them. Our success in recruiting domestic PhD students is growing, including five new domestic PhD students within the last two years. 
-
-PhD students act as force multipliers in the research programs of their advisors as well as undergraduate instructional support of the department. To increase the size, quality, and diversity of our PhD program, each year our RTG program will recruit about three new PhD students to be supported for the their first three years of study.  One avenue for increasing the size and diversity of our applicant pool, presently numbering 30--35 per year, will be through our summer REU programs for undergraduates described in Section \ref{sec:summer}.  The SURE program, in particular, involves partnerships with minority serving institutions.  Our summer 2021 SURE pilot engaged an African American student from an HBCU, who is now in our PhD program.  
+%PhD students act as force multipliers in the research programs of their advisors as well as undergraduate instructional support of the department. 
+\marginpar{\color{red}check numbers against budget.} 
+To increase the size, quality, and diversity of our PhD program, each year our RTG program will recruit about three new PhD students to be supported for the their first three years of study.  One avenue for increasing the size and diversity of our applicant pool, presently numbering 30--35 per year, will be through our summer REU programs for undergraduates described in Section \ref{sec:summer}.  The SURE program, in particular, involves partnerships with minority serving institutions.  Our summer 2021 SURE pilot engaged an African American student from an HBCU, who is now in our PhD program.  
 
 
 %Janie Neal, 
@@ -770,7 +741,7 @@ The PIs have strong ties to Chicago State University (a predominantly black inst
 
 The PIs will visit minority serving institutions to give seminar talks to students and faculty on mathematical topics of interest related to our RTG.  We will build professional relationships with faculty advisors so that they are confident to recommend their students to our PhD program.  Our PIs will also participate in events that attract underrepresented minorities, such as the annual SACNAS meeting, the AMS joint meeting, and AWM events.
 
-Increasing our PhD stipends to make them comparable to those offered by other Chicagoland universities will help recruitment. To do this in a sustainable way, we will partner with Illinois Tech's Advancement Office to raise money for scholarship support for domestic PhD students, while advocating for higher stipends for all of our PhD students.
+{\color{red}is this feasible???}Increasing our PhD stipends to make them comparable to those offered by other Chicagoland universities will help recruitment. To do this in a sustainable way, we will partner with Illinois Tech's Advancement Office to raise money for scholarship support for domestic PhD students, while advocating for higher stipends for all of our PhD students.
 
 To retain our PhD students, we will assign them a faculty mentor from among the PIs when they first enter our program.  This mentor may change if the student's research interests are best served by a different mentor.  The faculty mentor will guide them in developing a portfolio of successful cross-disciplinary research with collaborators outside our department and institution.  This will not only instill in them the ability to bring a variety of mathematical tools to bear on important problems, but also grow their network of research peers beyond their advisor's research group.
 
@@ -779,18 +750,30 @@ To retain our PhD students, we will assign them a faculty mentor from among the 
 % The mentor will also be responsible in identifying and recommending the student for suitable summer internships.
 %Each PhD student will meet once a semester with the mentor and our Associate Chair for Graduate Studies to monitor progress towards completion of the PhD.  Selection of courses and the thesis committee will be decided in conjunction with the faculty mentor,
 
+
+
+{\color{red}This is about retention... please edit. AND SHORTEN.}
+By the end of Year 1, PhD trainees will enroll in one of the groups and be assigned a faculty mentor from the corresponding team. They will   help with the summer programs.   Year 2
+will still be focused on completing necessary coursework.
+Ideally, PhD students will do a research-related internship during the summer of Year 2 or Year 3. Students who do not have
+a summer internship will do in-house research and participate in the RTG summer program
+by giving lectures and mentoring BS students. By the end of Year 3, RTG students
+should pass qualifying exams and present their PhD thesis proposal. They should also have participated in one   workshop or presentation run by the Center for Learning Innovation to prepare them for teaching experience. In Year 4, students will be fully engaged in their dissertation work straddling one or more of our research project areas. They will also teach a section of Calculus with the support of a teaching
+mentor, who will observe a few classes and write a report. The summer of Year 4 and all of Year 5 should focus on completing their dissertation and applying for jobs and postdoctoral fellowships.
+In total, PhD student trainees will have at least two semesters of either supervised teaching or research-related internship. 
+{\color{red} !! $\mapsto$ } Internships may be at at Argonne (see letter from SP Leyffer) or other government labs and or at data science companies, such as SigOpt (now a part of Intel) whose Head of Engineering, our alum Michael McCourt, has provided a letter  of collaboration as a supplementary document.\marginpar{\color{magenta}TAG: Chun. verify letters exist with our proposal.} 
+
+
 \subsection*{Postdoctoral fellows}
 We will recruit postdoctoral fellows through our professional networks, approaching promising PhD students that we meet at conferences, and advertisements in \url{mathjobs.org}. Each postdoctoral fellow will have two faculty mentors. One mentor will center on research activities, such as preparation of 
 publications, research presentations, mentoring students, and proposal writing. A second faculty member will mentor on teaching activities by way of visits and advising on suitable Center for Learning Innovation workshops they should attend. More details on mentoring are provided in the Postdoctoral Mentoring Plan.
 
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Performance Assessment Plan  }
  
-To ensure that we are fulfilling our commitments made in this proposal and making in course adjustments as needed, we will establish and advisory group of three senior academics and administrators, e.g., the Dean of Computing, the Dean of the Graduate College, and the Vice President for DEI.  The PIs will report to this advisory group on a semi-annual basis and take their advice on how to improve our program.
+To ensure that we are fulfilling our commitments made in this proposal and making in course adjustments as needed, we will establish and advisory group of three senior academics and administrators, e.g., the Dean of Computing, the Dean of the Graduate College, and the Vice President for DEI. 
+{\color{magenta}Hannah said yes! - SP}
+The PIs will report to this advisory group on a semi-annual basis and take their advice on how to improve our program.
 
 We will specifically collect and evaluate the following data on the following metrics:
 
@@ -827,22 +810,25 @@ We aim to see greater numbers and a more diverse pool of  applicants to our degr
  
 Our university has committed three offices and one seminar room plus an adjacent large open space in the 14th floor of the Michael Paul Galvin Tower for RTG activities. This space will facilitate the training and collaboration that are crucial to our RTG.
  
-PI Liu and 4 Co-PIs will oversee the running of the program, as RTG Director  and Co-Directors, respectively.  The tentative rotation has Liu to manage for Year 1, Hickernell for Year 2,    Li for  Year 3, Petrovi\'{c} for Year 4,     and Zhong for Year 5.   All PIs will participate in the summer activities.  
-{\color{magenta} makes less sense; also where are all the senior personnel. rewrtie this.} 
-The RTG Director (Liu) will oversee the budget and convene regular meetings of the PIs to ensure that all our activities are running as planned. Co-PI Pelsmajer has been
-Associate Chair for teaching for many years and he will be in charge of  training in teaching and mentoring. 
+PI Liu and 4 Co-PIs will oversee the running of the program, as RTG Director  and Co-Directors, respectively.  The tentative rotation has Liu to manage for Year 1, Hickernell for Year 2,    Li for  Year 3, Petrovi\'{c} for Year 4,     and Zhong for Year 5.    PIs, and SPs where appropriate, will participate in the summer activities.
+The RTG Director (Liu) will oversee the budget and convene regular meetings of the PIs to ensure that all our activities are running as planned. %Co-PI Pelsmajer has been Associate Chair for teaching for many years and he will be in charge of  training in teaching and mentoring. 
 The administrative support will be partially funded by this grant and by the College of Computing. 
 For this to work effectively, the Director or Co-Directors will have a course release during the year when they manage the program.
 
-During the past five years, our department has trained on average 55 BS students yearly, and these BS graduates have gone to PhD programs in university such as UCLA, NYU, UIUC or found jobs in companies such as Intel, Samsung and Twitter. Our group of RTG PIs has trained 3 PhDs per year (one quarter of them are female or minority; one third go to academia and two thirds go to industry)  and 3 postdocs per year (one third are female; all go to academia).  See supplementary Trainee Data and Quantitative Demographic Data. 
 
-Our trainees will have opportunities for summer interns or other research positions at Argonne National Lab, and SigOpt, an Intel company. Romit Maulik is an Argonne scientist with a research faculty appointment at Illinois Tech.  He will be the liaison person for managing the summer internships at Argonnne. 
+Our trainees will have opportunities for summer interns or other research positions at Argonne National Lab, and SigOpt, an Intel company. Romit Maulik  is an Argonne scientist with a research faculty appointment at Illinois Tech.  He will be the liaison person for managing the summer internships at Argonnne. {\color{red}We can just add Sven Leyffer here too. Is Romit still on?} 
 
- \section{Dissemination} 
+ \section{Dissemination}
  We will create a   RTG website that will include a schedule of activities, publications and highlight
 distinctions received by RTG participants. The website will link to other items of interest and a link will
 be created for recruitment purposes. All presentations by RTG faculty and trainees  will    include a slide advertising our RTG.
-Moreover, the resulting publications   will be hosted on arxiv and published in journals.  Software produces will be hosted on GitHub.  Workshop  presentations and  public lectures will be posted on our RTG YouTube channel.
+Moreover, the resulting publications   will be hosted on arxiv and published in journals.  Software produces will be hosted on GitHub.  Workshop  presentations and  public lectures will be posted on our RTG YouTube channel. {\color{red}please verify: we will indeed have a youtube channel? who will be in charge of this.}
+
+Workshops, public lectures, learning innovation experiences, and research findings will be publicly available on our  RTG website, on our YouTube channel, on GitHub, and in academic journals. We will disseminate our RTG best practices at professional conferences and on our website so that they can inspire national STEM  training programs with partnerships of universities, government labs, industry, and nonprofit organizations.
+
+{\color{cyan}Maybe here we also refer to the mini-courses and all of our seminars which will be open to those outside of RTG --- ??? if there is space -- to tie back in the entire proposal. }
+
+
 
  
 %With the assistance of a student worker, we will establish a website for this RTG that serves both an inward facing and an outward facing function.
@@ -852,6 +838,7 @@ featuring our education, research  and outreach  activities.
 
  
  \section{Post-RTG plan}
+ {\color{magenta} --- SONJA PLANS TO WORK ON THIS NEXT.--- }
 The infrastructure for recruiting a diverse cohort of undergraduate and graduate students into research groups and supporting their career development through the RTG colloquium will continue and expand throughout our department.  The research groups will actively pursue external research and REU funding opportunities to continue and expand our efforts in the three project areas identified in Section \ref{sec:researchproblems}. The new courses created and the revised courses will continue to be offered.
 With the support of the Illinois Tech administration we will maintain the postdoctoral program with three
 fellows each with a 1-1 teaching load. The teaching component for RTG graduate students represents
@@ -873,25 +860,55 @@ For an overall assessment of the RTG we will keep contact for the next three yea
  
 
 The overarching goal of this RTG is to increase the presence of US citizens, nationals and permanent residents in the workforce of  mathematical sciences. 
-By partnering with minority-serving  universities in greater Chicago and beyond, such as 
-Clark Atlanta University, Chicago State University and Northeastern Illinois University, where we already have connections, this RTG   contributes to  the development of a diverse    workforce with technical maturity and communication skills, ready to enter academia, industry and government. In particular, this RTG simultaneously trains students and postdoctoral fellows to be socially responsible for our environment, health, new energy resources, and financial markets.  They will  better appreciate climate change and rare events, gene mutation and disease, financial risk, energy efficiency, and data privacy in post-quantum era.   
+By partnering with minority-serving  universities in greater Chicago and beyond, such as   Chicago State University and Northeastern Illinois University, where we already have connections, this RTG   contributes to  the development of a diverse    workforce with technical maturity and communication skills, ready to enter academia, industry and government. In particular, this RTG simultaneously trains students and postdoctoral fellows to be socially responsible for our environment, health, new energy resources, and financial markets.  They will  better appreciate climate change and rare events, gene mutation and disease, financial risk, energy efficiency, and data privacy in post-quantum era.   
    
 
-This vertically integrated training program will actively women  and racial and ethnic minorities to achieve better equity and inclusion.  Workshops, public lectures, learning innovation experiences, and research findings will be publicly available on our  RTG website, on our YouTube channel, on GitHub, and in academic journals.  The written and oral communication skills of our trainees will be built by requiring them to write to and speak to different audiences: referees for different journals, funding panels, and the general public. 
+This vertically integrated training program will actively women  and racial and ethnic minorities to achieve better equity and inclusion.  The written and oral communication skills of our trainees will be built by requiring them to write to and speak to different audiences, as outlined in Section 2.4. 
+In addition to the trainees, the entire Department of Applied Mathematics (both students and faculty) will benefit from this RTG in some way. Students and faculty in the departments of Computer Science, Physics, and Biomedical Engineering will also be positively influenced by the proposed innovative courses %(e.g., Quantum Dynamics, Machine Learning on Encrypted Data) 
+and the conducive research environment. 
+ 
+This RTG trainees will contribute to and benefit from collaborative activities with the NSF Institute for Mathematical and Statistical Innovation (IMSI) and Argonne National Laboratory. The trainees will also have opportunities for internships at Argonne, \marginpar{\color{magenta}we already mentioned internships somewhere else; go back and tighten the text!} and data science companies like SigOpt. This RTG will also enhance the public’s understanding and appreciation of mathematical sciences and their impact on our society, through our partnerships with C2ST, IMSI, and Argonne.  
+ 
+ \noindent {\bf Social impact.} 
+The PIs proudly point out that outreach and social impact are pillars of the proposed work in this RTG.
+%%\subsection{Outreach} %sonja proposes this: 
+%{Outreach and broader engagement}
+%{\color{magenta} Outreach is our strength. Sonja will move items to co-curricular etc. then kill this section. Then summarize this and move to braoder impacts section.}
+%\subsection*{Socially Responsible Modeling, Computation, and Design
+%(SoReMo)}
+%{\color{magenta} ***SoReMo does NOT equal outreach.***  SoReMo is directly student training AND outreach. we will also involve phd students and postdocs!} 
+ We will incorporate the trainees with the SoReMo projects that are relevant to aspects of social responsibility and could have impact to social justice, including those on the climate dynamics that is crucial in understanding the global warming and environment changes, the biology systems that are related to disease prevention and public health; the engineering applications on battery, fuel cell, energy storage and clean energy; and statistical models connected to social and climate justice. 
+%While specific project outcomes are heavily dependent on the projects being carried out, we expect impact on social justice, climate, and other projects as described in the previous section. The following are standard outcomes across all student projects for each and every fellow who is funded by SoReMo: 
+In particular, the project will contribute to general  data literacy and engagement with data, whether it be quantitative or qualitative. In fact, SoReMo expands the view of what traditionally constitutes data-driven disciplines. These include: applied mathematics, statistics, computer science, data science, design, social sciences, humanities, architecture. Specifically, we integrate mathematical modeling, computation, data science, the human aspect, and design to make an impact. Sometimes the data is quantitative, sometimes qualitative. Sometimes it is gathered through surveys, sometimes it is analyzed with statistical tools. Ultimately, though, the data is presented and discussed how it can be used for the common good. 
 
-In addition to the trainees, the entire Department of Applied Mathematics (both students and faculty) will benefit from this RTG in some way. Students and faculty in the departments of Computer Science, Physics, and Biomedical Engineering will also be positively influenced by the innovative courses (e.g., Quantum Dynamics, Machine Learning on Encrypted Data) and the conducive research environment. 
- 
-This RTG trainees will contribute to and benefit from collaborative activities with the NSF Institute for Mathematical and Statistical Innovation  and Argonne National Laboratory. The trainees will also have opportunities for internships at Argonne, and data science companies like SigOpt. This RTG will also enhance the public’s understanding and appreciation of mathematical sciences and their impact on our society, through our partnerships with C2ST, IMSI, and Argonne. 
- 
-We will disseminate our RTG best practices at professional conferences and on our website so that they can inspire national STEM  training programs with partnerships of universities, government labs, industry, and nonprofit organizations.
 
+This RTG also provides direct impact  on the community and interdisciplinary dialogue at Illinois Tech. 
+%Namely, if a SoReMo  project engages in a topic that is related to our campus and community, the outcomes are generally translated to action the semester following the project. 
+SoReMo projects impact society by engaging in conversations about difficult issues and proposals of interdisciplinary nature on how to solve them. 
+Two of the three spring 2023 projects are directly impacting our community: one studies the effect of redlining to health in the context of environmental justice, and the other studies how to improve outcomes for a particular underserved Chicago community (Englewood) which is trying to be more green in the context of the recycling issues Chicago faces as a city.  %{\color{magenta}can add more on Barien's project as well as Harrison's on the impact on on-campus life, international student onboarding, etc.} 
  
+Our planned activities will also impact our department colloquium to enhance \emph{inclusion}. 
+%\noindent {\bf The department colloquium \& inclusion.} 
+% Sonja has edited this part! 
+As usual, graduate students and postdocs are expected and encouraged to attend the department-wide research colloquium. The event is already designed so that the invited speakers can interact with graduate students during the after-talk tea session in the department's lounge. In addition, the colloquium coordinator always 
+%5) student and postdoc involvement in our department research colloquium, where the colloquium speakers are required to give research talks which are accessible to general audiences; moreover, we also require the speakers to interact with the graduate students for the after-talk tea session in our student lounge.  We arrange 
+arranges individual meetings for faculty, postdocs, and students alike, % postdoc and senior graduate students 
+to meet with the speakers to discuss their research.  The department has a required graduate-level course for attending the colloquium. One of the requirements is that the students submit a one-page summary of talks they attend. 
+%, where the students are asked to submit a one-page summary for the talks they attend.  (MZ: this is already being implemented; we don't have a pre-talk-chat-with-students component yet). Yes, it is being implemented but we need the pre-talk chat with students and we need to tell speakers to make their talks student accessible, because most do not. A pre-talk chat if we promise to do it can be something that we do *forever* and therefore can change the culture long-term, and NSF should like that.  
+We will enhance this important series of department events by asking our colloquium speakers to do a little bit more work that will leave a large impact: namely, to prepare a short pre-talk-chat with students. Before the formal lecture, the students will meet the speaker to ask questions of "What is...?" type that we see in the AMS Notices. This will require high-level definitions of concepts that will appear in the talk, but the event will be run \emph{by students} so that the conversation happens on their terms. This is not only more inclusive, but is also more likely to have impact, as previous PI experience suggests.  
+% \marginpar{\color{magenta}TAG: Ming} - the research topics represented need to be as broad as we are. It is also the job of the colloquium organizer to **ensure** speakers are student-friendly. Just saying this is not enough; we have to **do** something. I propose creating a 15-minute event before the talk for which the colloquium speaker prepares and which is mandatory for our students: what are the definitions one needs to know in order to follow the talk? What are some intuitive concepts that are critical, but which cannot typically be absorbed by a non-expert in, like, the 3 minutes they show up on a typical slide? Also I do not know what we do for the colloquium credits any more, but bring back the talk summaries (ask Sonja for details) and this is then tying in the entire department into our graduate student training and ensures the impact of the RTG continues post-grant. AND we are all involved. 
+
+
+
+
+
+
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \section{Results from Prior NSF Support}
 %\noindent\underline{{\bf PI Duan:\,}} Duan and Xiaofan Li received prior support from: {\it DMS-1620449, 09/15/2016 - 08/31/2020, \$210,000. Theoretical and Numerical Studies of Nonlocal Equations Derived from Stochastic Differential Equations (SDEs) with L\'evy Noises}. Intellectual merit: This project develops efficient numerical techniques for investigating the macroscopic quantities that can help understand the dynamics of SDEs with $\alpha$-stable L\'evy noises, publications include \cite{Chen, WuFuDuan2019, YangDuan2020,ZhangZhuanDuan,WCDKL,CAI2019166,Cai_2017,IJNAM-17-151}. Broader impacts: One African American female Ph.D. student Julienne Kabre, and three other PhD students were supported  by the project. 
  
 %%%%%%%%%%%%%%%%% 
-\subsection*{Prior Support for Hickernell} NSF grant DMS-1522687, Stable, Efficient, Adaptive Algorithms for Approximation and Integration,
+\subsection*{Hickernell} NSF grant DMS-1522687, Stable, Efficient, Adaptive Algorithms for Approximation and Integration,
 		\$270,000, 8/1/2015 -- 7/31/2018 along with Gregory E.\ Fasshauer (co-PI) and  Sou-Cheng Terrya Choi (female, Senior Personnel).  Other major contributors were Hickernell's research students: 
 		six PhDs earned (two female), one current PhD student, and three MSs earned (two female).
 Articles, theses, software, and preprints supported in
@@ -899,12 +916,12 @@ part by this grant include
 \cite{ala_augmented_2017, ChoEtal17a, ChoEtal20a, Din15a, DinHic20a, GilEtal16a, Hic17a, HicJag18b, HicJim16a, HicEtal18a, HicEtal17a, HicKriWoz19a, RatHic19a, GilJim16b, JimHic16a, JohFasHic18a, Li16a, Liu17a, MarEtal18a, mccourt_stable_2017, MCCEtal19a, mishra_hybrid_2018, MisEtal19a, rashidinia_stable_2016, rashidinia_stable_2018, Zha18a, Zha17a, Zho15a, ZhoHic15a}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection*{Intellectual Merit}
+\subsubsection*{Intellectual Merit}\marginpar{make it $<5$ lines of text?}
 Hickernell and collaborators developed adaptive algorithms for univariate integration, function approximation, and optimization \cite{ChoEtal17a,HicEtal14b, Din15a, Ton14a, Zha18a}.
 Hickernell and collaborators developed globally adaptive algorithms for approximating multivariate integrals over the unit cube based on low discrepancy sequences \cite{HicJim16a,HicEtal17a,JimHic16a,RatHic19a}.  The error bounds underlying these adaptive cubatures rely on the Fourier coefficients of the sampled function values, either by tracking their decay rate or by using them to construct Bayesian credible intervals. The cost to bound the error using function data is essentially the same as order the cost to approximate the integral. 
 Hickernell and collaborators investigated function approximation problems for Banach spaces defined by series representations \cite{DinHic20a,DinEtal20a}.  For all of these adaptive algorithms, defining a suitable cone of functions to be integrated, approximated, or optimized is key
 
-\subsubsection*{Broader Impacts.}
+\subsubsection*{Broader Impacts.}\marginpar{make it $<5$ lines of text?}
 Publications arising from this project are reference above.  
 The project personnel spoke at many academic conferences and gave colloquium/seminar talks to mathematics and statistics departments and at several conferences.  Hickernell co-organized the 2016 Spring Research Conference and was a program leader for the SAMSI 2017--18 Quasi-Monte Carlo (QMC) Program.   He received the 2016 Joseph F.\ Traub Prize for Achievement in Information-Based Complexity. The algorithms from this research have been implemented in our open source MATLAB Guaranteed Automatic Integration Library (GAIL), which is used in the yearly graduate course in Monte Carlo methods.  Hickernell and the other senior personnel have mentored a number of research students associated with this project, including several female students.  More than a dozen undergraduates have been mentored and several have proceeded to graduate study in the mathematical sciences. 
 
@@ -912,7 +929,7 @@ The project personnel spoke at many academic conferences and gave colloquium/sem
 \subsection*{Li} PI Li is supported by NSF grant  DMS-1620449, Theoretical and Numerical Studies of Nonlocal Equations Derived from Stochastic Differential Equations with L\'evy Noise, \$210,000; 09/15/2016 - 08/31/2020. Publications Resulting from this grant:
  \cite{ChenWu, ChenXL2020,  DannyTesfay,GaoTing2016, Gao2016,    Liu2019LvyNI, Lv2016OnAS, QiaoDuan2018,Wang2018NumericalAF, YangDuanWiggins2020,ZhangZhuanDuan,ZhengDuan2017,ZhengYY2020}.
 
-\subsubsection*{Intellectual Merit}
+\subsubsection*{Intellectual Merit}\marginpar{make it $<5$ lines of text?}
 (i)  \textbf{Numerical Methods}:
     We have developed a convergent and fast algorithm to compute macroscopic quantities from stochastic differential equations  with a-stable L\'evy noises. The numerical results on the mean   exit time, escape probability,  and the probability densities have been obtained \cite{ChenXL2020, GaoTing2016, Gao2016,     Wang2018NumericalAF}.
 (ii)  \textbf{Theoretical Analysis}:
@@ -928,10 +945,10 @@ We have obtained results on  boundary regularity, interior regularity and maxima
  %He has started to develop the numerical algorithm for solving the two-dimensional integro-differential equation induced by the $\alpha$-stable L\'evy noise.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{Prior Support for Liu} NSF grants: DMS-1714401,  Topics in Complex Fluids and Biophysiology: the Energetic Variational Approaches, \$349,934, 7/1/2017 - 6/31/2021 and 
+\subsection*{Liu} NSF grants: DMS-1714401,  Topics in Complex Fluids and Biophysiology: the Energetic Variational Approaches, \$349,934, 7/1/2017 - 6/31/2021 and 
 {NSF DMS-1950868, Collaborative Research: Multi-Scale Modeling and Numerical Methods for Charge Transport in Ion Channels, \$160,000.00, 8/15/2020 - 7/31/2023.}
 
- \subsubsection*{Intellectual merit.}  
+ \subsubsection*{Intellectual merit.}  \marginpar{make it $<5$ lines of text?}
 % Chun Liu is the PI on the NSF grants:
 % DMS-1412005, Energetic Variational Approaches in Complex Fluids and Electrophysiology, \$335,000.00,  8/1/2014 - 7/31/2017.
 %grant #2024246 from the United States–Israel Binational Science Foundation (BSF), Israel .
@@ -962,54 +979,38 @@ They also attended and presented their work in workshops and conferences.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection*{Petrovi\'c} PI Petrovi\'c is currently supported by DOE Office of Science, Randomized Algorithms for Scientific Computing, Award number 1010629. This is joint with Argonne National Laboratory (2022-2025) in the amount of \$2.8M.
-
-She was supported on DMS\#1522662, Collaborative Research: Randomized and Structure-Based Algorithms in Commutative Algebra, 8/25/15-8/25/19, \$229,577. (Total collaborative award \$430K.)
+\subsection*{Petrovi\'c} 
+DMS\#1522662, Collaborative Research: Randomized and Structure-Based Algorithms in Commutative Algebra, 8/25/15-8/25/19, \$229,577. (Total collaborative award \$430,000.)
 \\
-\emph{Intellectual merit.} The project offered  a  significant speed-up, from exponential  to expected linear runtimes, to   solving systems of polynomial equations and finding ideal generators   using a probabilistic method.  
+\emph{Intellectual merit.} The project offered  a  significant speed-up, from exponential  to expected linear runtimes, to   solving systems of polynomial equations %and finding ideal generators   
+using a probabilistic method.  
  \\
-\emph{Broader impacts.} Increase of use of combinatorial structures in polynomial computational problems can be felt across applications including statistics, optimization, graph theory, combinatorics, and systems biology. 
+\emph{Broader impacts.} Increase of use of combinatorial structures in polynomial computational problems can be felt across applications including statistics, optimization, graph theory, and systems biology. 
 \\
 \emph{Products.}
  The project has resulted in 18 papers: \cite{GKP-fienberg, RMI, semigroups, AlgStatNtwk-ARSIA, WhatIsMB, jalgstat-fienberg-editorial, karwa2016dergms, hypergraphs-toric, jesus1, jesus2, jesus3, jesus4, jesus5, jesus6, jesus7, algebraicViolators, bouquets, surveyAlgStatCONMchp},   
  a software package \cite{RMIm2}, 
 and a  summer school at Max Planck Institute in Leipzig, Germany,  with $70+$ participants. 
 
-%%sonja: 
-%PI Petrovi\'c's project  DMS\#1522662, Collaborative Research: Randomized and Structure-Based Algorithms in Commutative Algebra, 8/25/2015-8/25/2018, \$229,577   approaches  problems in computational algebra %the problem of solving systems of polynomial equations, and of finding generators for polynomial ideals 
-%using a probabilistic method. %, focusing on providing low expected runtime and the use of random choices -- for computational algebra problems that have high worst case complexity. 
-%\\
-%\emph{Intellectual merit.} The project uses the underlying combinatorial structure of certain families of problems  %(e.g. polynomial system feasibility) 
-%for significant speed-up (from exponential worst-case to expected linear runtimes).
-%The resulting algorithms and software can be used in any applied field %commutative algebra, statistics, optimization, graph theory, and other fields 
-%where large-scale systems of polynomials arise naturally. %The project adapts to the problem under study a sampling technique that has been used in computational geometry and optimization. 
-%% The theoretically expected running time is {\it linear} in the number of input polynomials.
-% \\
-%\emph{Broader impacts.} There are several applications including statistics and optimization, where key applied methods rely on algorithms to compute such ideal generators. The research will  increase the use of combinatorial structures in polynomial computational problems. 
-%Applications exist in graph theory; further applications are expected in combinatorics, coding theory,  systems biology.
-%\\ 
-%\emph{Products.} The project has so far resulted in 7 research articles (published or submitted and in revision), %1 published article, %(Journal of Symbolic Computation), 
-% %3 submitted papers, 
-% a software package, several seminar and  conference presentations in less than three years. 
-
-
-%\subsubsection{Algebraic Statistics 2014} 
 PI Petrovi\'c  lead the organization of a focused 
  conference on Algebraic Statistics, co-sponsored by DMS \# 2004271 (co-PI), ``Algebraic Statistics 2020", in the amount of  \$34,000. 
 \\
 \emph{Intellectual merit.} Being the third large US-based meeting focused solely on the field of algebraic statistics,  the conference has provided a focused opportunity for interdisciplinary collaboration. 
 \\
 \emph{Broader impacts.} 
-The conference, Algebraic Statistics 2022, was held at the University of Hawaii at Manoa in Honolulu, HI from May 16, 2022 to May 20, 2022. The conference had 10 keynote talks, 21 shorter 20-minute contributed talks, and 8 posters. These talks introduced the audience to new work in algebraic statistics, ranging from algebraic methods for graphical models, sparse polynomial system solving, establishing parameter identifiability for models from evolutionary biology, geometry of polynomial optimization, and geometric principles of machine learning and statistical inference.
-The conference had 53 registered participants from 8 countries with the following fields represented (field determined by department of academic appointment): Mathematics, Statistics, Applied and Computational Math, Computer Science, Engineering, Operations Research, and Computational Biolgoy.  
-In addition to the conference, we held two complementary activities: a graduate education luncheon to discuss and share best practices in mathematics graduate education and a week-long workshop on Algebra of Phylogenetic Networks aimed at junior researchers.
+The conference, Algebraic Statistics 2022, was held at the University of Hawaii at Manoa in Honolulu, HI from May 16, 2022 to May 20, 2022. The conference had 10 keynote talks, 21 shorter 20-minute contributed talks, and 8 posters, most were early-career participants. %These talks introduced the audience to new work in algebraic statistics, ranging from algebraic methods for graphical models, sparse polynomial system solving, establishing parameter identifiability for models from evolutionary biology, geometry of polynomial optimization, and geometric principles of machine learning and statistical inference.
+%The conference had 53 registered participants from 8 countries, representing % with the following fields represented (field determined by department of academic appointment): 
+%Mathematics, Statistics, Applied and Computational Math, Computer Science, Engineering, Operations Research, and Computational Biology departments.  
+%In addition to the conference, we held two complementary activities: a graduate education luncheon to discuss and share best practices in mathematics graduate education and a week-long workshop aimed at junior researchers.
 
-\emph{Products.} For this conference, titles and abstracts have been posted on the  AS2022 conference website: https://algebraicstatistics.org/as2022
-The organizers of the conference invited submissions to the special issue of Algebraic Statistics on the occasion of the conference.
-Journal Editors: Thomas Kahle and Sonja Petrović
-Special issue co-editor: Elizabeth Gross. 
-To date, there have been more than a dozen submissions that are currently under review. We expect at least one issue, possiblye a volume of two issues, to be published in 2023 containing these papers. 
+\noindent 
+\emph{Products.} For this conference, titles and abstracts have been posted on the  AS2022 conference website: https://algebraicstatistics.org/as2022.
+%The organizers of the conference invited submissions to the special issue of Algebraic Statistics on the occasion of the conference.
+%Journal Editors: Thomas Kahle and Sonja Petrović, 
+%Special issue co-editor: Elizabeth Gross. 
+There will be a volume in Algebraic Statistics (an MSP journal) to be published in 2023 containing  more than a dozen of these papers. 
 
+PI Petrovi\'c is currently supported by DOE Office of Science, Randomized Algorithms for Scientific Computing, Award number 1010629. This is joint with Argonne National Laboratory (2022-2025) in the amount of \$2.8M.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection*{Zhong} PI Zhong is supported by NSF grant CCF-AF-$2225507$, A Bayesian Paradigm for Physics-Informed Machine Learning, \$$586,319.00$, $12/1/2022$ - $11/30/2025$.  Publications resulting from this grant:~\cite{chen2022using, coutinho2022physicsinformed, ZLABN2023}.
@@ -1017,7 +1018,7 @@ To date, there have been more than a dozen submissions that are currently under 
 \subsubsection*{Intellectual merit.} 
 We plan to develop state of the art Bayesian based scientific machine learning methods to solve PDE-related forward and backward problems with applications in petroleum engineering, mechanical/aerospace engineering, astrophysics/astronomy.  Our approaches are novel in terms of the Bayesian based predictability and uncertainty quantification; moreover our approaches are well tailored for the particular PDEs arising in those aforementioned application areas.
 
-\subsubsection*{Broader impacts} 
+\subsubsection*{Broader impacts} \marginpar{make it $<5$ lines of text?}
 The grant will support undergraduate and graduate students as well as postdoctoral researchers.  It will create a new graduate level course in scientific machine learning. The corresponding algorithms for the new Bayesian approaches will be implemented in open-source software package, which is made available online for the general public to learn and employ for their particular domain areas.  It will foster a community of faculty members, students, scientists within both Texas A$\&$M University and Illinois Tech for scientific machine learning for organizing seminars, workshops, webinars, and summer schools.  It will also supports the ongoing work for the Scientific Machine Learning Lab in the Texas A$\&$M Institute of Data Science at Texas A$\&$M University.
 
 % \medskip 
@@ -1036,7 +1037,7 @@ The grant will support undergraduate and graduate students as well as postdoctor
 \bibliographystyle{abbrv}
 % \bibliographystyle{plain}
 %\bibliographystyle{natbib}
-\bibliography{asi,ref_art,stochas,ml_ref,datasci,VD, quantum,FJHown23,FJH23,LDS,NSF_refs}
+\bibliography{asi,ref_art,stochas,ml_ref,datasci,VD, quantum,FJHown23,FJH23,LDS,NSF_refs,productsCompAlgNSFdeloerapetrovicstasi,MarkovBases,generalNetworks,AlgStatAndNtwks}
 
 \end{document}    % End %
 
