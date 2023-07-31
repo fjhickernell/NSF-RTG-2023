@@ -307,7 +307,8 @@ Thrust 1, \emph{Variational Analysis and Inference of High Dimensional Complex D
 Thrust 2, \emph{Sampling combinatorial structures}, couples inference and sampling. 
 Thrust 3, \emph{Dynamics under uncertainty}, couples sampling and dynamics. 
 %All 3 s incorporate two of the main trusts of this RTG: namely, thrust 1 couples inference and dynamics, thrust 2 inference and sampling, and thrust 3 sampling and dynamics. 
-Joint \FredNote{with what? across themes? or thrusts?}applications in data science provide an additional common thread.  %to the proposal. 
+Joint \FredNote{with what? across themes? or thrusts?}{\color{magenta}across themes. not sure how to phrase this best.}
+applications in data science provide an additional common thread.  %to the proposal. 
 %under the umbrella of complex dynamical systems {\color{magenta}EDIT ME} NEW: thrust 1 = inference and dynamics; thrust 2 = sampling and inference; thrust 3 = sampling and dynamics. All 3 thrusts have interactions and data science connection. {\color{cyan}←\leftarrow This is the new THREAD of our proposal. } 1.\ Dynamics Under Uncertainty; 2.\  Energetic Variational Approaches for Complex Dynamics; and 3.\ Mathematical Tools for Open Quantum Systems. thrust 1 connects with Theme 2 via minimizing action functionals. In Thrust 3, we examine the interplay of quantum uncertainty and environmental fluctuations, and further consider a Bohmian trajectory formulation of quantum dynamics, thus linking with Thrust 1. 
 
 
@@ -319,7 +320,8 @@ Fred Hickernell, Xiaofan Li, Chun Liu, Sonja Petrovi\'c, and Ming Zhong. This RT
 % The PIs include present and past departmental, college, and university leadership.   Thus, we expect to persuade the bulk of our department to participate in this RTG in some capacity, whether as part of the research groups or implementing our curricular and co-curricular innovations.{\color{magenta}umm, this is actually *unethical*. Instead, we will *involve* a large portion of our colleagues as senior personnel and give them meaningful roles in this RTG, thereby contributing to its success and with a long-term training vision.}
 The PIs and Senior Personnel (SPs) encompass every department group: senior and junior tenured and tenure track (TT) faculty and non-tenured/tenure track (NTT) teaching faculty. The involvement of a large portion of the department embeds this RTG into our daily activities in a way that contributes to both short-term success of the proposed program and a long-term transformative training vision. 
 
-\marginpar{\color{cyan}TAG: Chun, can someone double-check these numbers? {\color{red}Yes, Chun will do }\color{cyan} remove CS students?? add DOMESTIC math students?}{\color{blue} we double checked the numbers} We currently have \numUG BS applied mathematics and statistics majors, \numGrad graduate students including \numMS master students and \numPHD doctoral students, \numjoint graduate students in programs offered jointly with the Department of Computer Science and \numPostDoc postdoctoral fellows or visiting assistant professors. Our graduates build their careers in  industry  and academia. Many of our undergraduates pursue PhDs at other top universities, including Cornell, NYU, UCLA and UIUC. Most of our postdoctoral researchers land in tenure-track positions after leaving Illinois Tech.
+%\marginpar{\color{cyan}TAG: Chun, can someone double-check these numbers? {\color{red}Yes, Chun will do }\color{cyan} remove CS students?? add DOMESTIC math students?}{\color{blue} we double checked the numbers}
+We currently have \numUG BS applied mathematics and statistics majors, \numGrad graduate students including \numMS master students and \numPHD doctoral students, \numjoint graduate students in programs offered jointly with the Department of Computer Science and \numPostDoc postdoctoral fellows or visiting assistant professors. Our graduates build their careers in  industry  and academia. Many of our undergraduates pursue PhDs at other top universities, including Cornell, NYU, UCLA and UIUC. Most of our postdoctoral researchers land in tenure-track positions after leaving Illinois Tech.
 
 \subsection*{Partnership with  national labs and local institutes} 
 %...{Argonne, IMSI, C2ST, and Oak Ridge}
@@ -352,7 +354,8 @@ Letters of collaboration from these partners are included as supplementary docum
 
 The key faculty and scientists for each thrust are listed below. 
 % this discussion edited to better reflect the proposal/personnel structure 
-The structure of our department is similar to the way the research thrusts interact, tied together by fundamental mathematical constructs rather than broad research areas. \FredNote{I do not understand this previous sentence.} As such, there is a natural team structure for each thrust:  at least one of the PIs,  additional researchers from the department, additional researchers either from a partner outside our department, % The team for each Thrust will consist of one or more PIs, researchers with at least one Argonne scientist or faculty member from a department outside applied mathematics, {\color{magenta}this is NOT yet true for sonja's Thrust. %Argonne can collab only if application of sampling to optimization!}  
+%The structure of our department is similar to the way the research thrusts interact, tied together by fundamental mathematical constructs rather than broad research areas. \FredNote{I do not understand this previous sentence.} As such, there is a natural team structure for each thrust:
+The team structure for each thrust consists of at least one of the PIs,  additional researchers from the department, additional researchers either from a partner outside our department, % The team for each Thrust will consist of one or more PIs, researchers with at least one Argonne scientist or faculty member from a department outside applied mathematics, {\color{magenta}this is NOT yet true for sonja's Thrust. %Argonne can collab only if application of sampling to optimization!}  
 plus applied mathematics undergraduate and graduate students and postdoctoral fellows.
 %{\color{cyan}New strength:}
 The core of our team for the proposed project includes NTT and TT faculty across all levels in our department. The planned activities synergize across undergraduate, graduate, and postdoctoral training and collaboration and research. They are planned so as to include, invite, and impact all students, postdocs, and faculty in the department, in addition to RTG trainees.
@@ -365,8 +368,9 @@ The core of our team for the proposed project includes NTT and TT faculty across
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Thrust $1$. Variational Analysis and Inference of High Dimensional Complex Dynamics}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Chun Liu (lead), Trevor Leslie (Illinois Tech, Applied Math), Xiaofan Li (Illinois Tech, Applied Math), Yubin Lu (Illinois Tech, Applied Math), Georgia Papavasiliou (Illinois Tech, Biomedical Engineering), and Ming Zhong (Illinois Tech, Applied Math)
-
+Chun Liu (lead), 
+with colleagues from Illinois Tech, Applied Math: Trevor Leslie (Illinois Tech, Applied Math), Xiaofan Li (Illinois Tech, Applied Math), Yubin Lu (Illinois Tech, Applied Math), Georgia Papavasiliou (Illinois Tech, Biomedical Engineering), and Ming Zhong (Illinois Tech, Applied Math)
+\FredNote{We have affiliations attached to some thrust members but not to others (see below).  What do we want to do?}{\color{magenta} changed -- saving space!}
 \subsubsection*{Background} One of the most crucial tasks in data science is the capability of dealing with high-dimensional data efficiently and effectively, such as high-resolution image generation, large language models for natural language processing \FredNote{You are talking about large language models but who has expertise?  No CS people here.}, text/image/voice mixed data analysis, medical image/data processing, etc.  Many of high dimensional data sets which we are interested in obey some form of physical/biological/chemical laws governed by systems of ODE/PDE, which makes the analysis and inference extremely difficult.  We propose several energetic variational approach based data-driven methods to infer the governing equations from observation data for analysis, prediction, and control.  The framework of energetic variational approach, originated from seminal works of Raleigh \cite{strutt1871some} and Onsager \cite{onsager1931reciprocal,onsager1931reciprocal2}, provides a paradigm to determine the dynamics of a non-equilibrium system from prescribed energy-dissipation laws.  Such paradigm offers a unique pathway into the accurate scientific discovery of models from high-dimensional dynamical data. 
 
 \subsubsection*{Analyzing Complex Behaviors from High dimensional Data}
@@ -433,7 +437,7 @@ Finally, we will investigate {\it dynamic networks}: networks that evolve over t
 SPs Kaul, Pelsmajer, and Stasi will co-lead an  investigation into appropriate adaptive time scales  for summarizing dynamic networks and develop corresponding measures of quality. 
 Aggregation of longitudinal interaction data capturing multiscale phenomena will be combined with methods from statistics and network theory to be able to handle both temporal errors (sampling/data collection errors) and topological errors (missing or spurious interactions in the network).
 
-The longitudinal data of interactions in such networks has to be carefully analyzed to discover persistent patterns, such as hidden communities in a dynamic network of social interactions. Traditionally in graph theory, such data is aggregated into a single network, losing the temporal aspect of the data and also making its size difficult to analyze simultaneously. Our recent joint work \cite{tergms} makes a first connection between this idea and statistics. Another way is to take ``snapshots" of the dynamic network data at appropriate times where the timing of such snapshots can make a dramatic difference in capturing or missing the essential aspects of the network behavior. 
+The longitudinal data of interactions in such networks has to be carefully analyzed to discover persistent patterns, such as hidden communities in a dynamic network of social interactions. Typical approaches focus on the network structure, ignoring the temporal aspect of the data and also making its size difficult to analyze simultaneously. Our recent joint work \cite{tergms} makes a first connection between this idea and statistics. Another way is to take ``snapshots" of the dynamic network data at appropriate times, where the timing of such snapshots can make a dramatic difference in capturing or missing the essential aspects of the network behavior. 
 
 In order to summarize the dynamic network data, one must determine an appropriate time-scale, or adaptive time-scale, or multiple time-scales to capture multi-scale phenomena. The aggregation of this data based on such time-scale(s) must be combined with methods from statistics and network theory to be able to handle both temporal errors (sampling/ data collection errors) and topological errors (missing or spurious interactions in the network).  We will develop network algorithms and statistical models to handle this data time-scale aggregation problem in order to capture more types of network behavior and to do it better.  We will  consider different measures of quality and evaluate the success of our methods and models on  real and synthetic dynamic network data.
 
@@ -448,7 +452,7 @@ In order to summarize the dynamic network data, one must determine an appropriat
 %\marginpar{this one isn't first, right? this is Thrust 3.} 
 Xiaofan Li (lead), Fred Hickernell, Michael Pelsmajer, Ming Zhong (Illinois Tech, Applied Math), Mustafa Bilgic (Illinois Tech, Computer Science),  and Prasanna Balaprakash (Argonne National Lab). 
 
-\subsubsection*{Background} The interactions of uncertainty and nonlinearity lead to intriguing phenomena, such as  transitions between  different dynamical regimes. We shall develop modeling, analytical, computational and data science  methods to quantify stochastic dynamics, with applications to chemical \cite{agaoglou_chemical_2019}, biophysical \cite{Ruoff2018BiologicalCR}, power grid \cite{MEDJROUBI201714} financial risk \cite{DixHaBil20a,Gla03}, and climate systems \cite{Alexandrov2020NonlinearCD, Franzke2017NonlinearAS, Wan2020ADF}. 
+\subsubsection*{Background} The interactions of uncertainty and nonlinearity lead to intriguing phenomena, such as  transitions between  different dynamical regimes. We shall develop modeling, analytical, computational and data science  methods to quantify stochastic dynamics, with applications to chemical \cite{agaoglou_chemical_2019}, biophysical \cite{Ruoff2018BiologicalCR}, power grid \cite{MEDJROUBI201714}, financial risk \cite{DixHaBil20a,Gla03}, and climate systems \cite{Alexandrov2020NonlinearCD, Franzke2017NonlinearAS, Wan2020ADF}. 
  
 Complex systems are usually under the influence of randomness or uncertainty \cite{Moss1, Horst, Gar, VanKampen3}. Uncertainties may also be caused by our lack of knowledge of some physical processes that are not well represented in the mathematical models (epistemic) and due to the inherent randomness of a specific event  \cite{Palmer1, Kantz, Wilks, Williams}.
 Although these random mechanisms appear to be very small or very fast, their long time impact on the system evolution may be delicate or even profound \cite{Arnold, DuanBook2015}. 
@@ -489,7 +493,7 @@ As the usual numerical methods  are not feasible, we will develop a method with 
 
 Furthermore, we will investigate the most probable transition pathway between dynamically different regimes (e.g., metastable states) during finite transition time. This pathway is the minimizer of the associated Onsager-Machlup action functional, $\mathcal{A}(z, \dot z) = \int_0^T \mathcal{L}(z(t), \dot z(t)) dt,$ where the Lagrangian  $\mathcal{L}$ depends on the vector field $f$, noise intensities $g, \sigma$, and  jump measure $\nu$ for L\'evy motion; for background, see   our recent works \cite{ChaoDuanOM,HuangYF}. The   transition time $T$ may also be estimated \cite{HuangYF2020}. We will explore how the energetic variational approaches in Thrust 2 may benefit us in the minimization of the Onsager-Machlup action functional. 
 
-QMC simulations are often used to quantify financial risk as well as in the problems mentioned above.  We will construct reliable data-based error estimates for QMC, which can serve as stopping criteria for QMC algorithms.  Although PI Hickernell and his collaborators have made some progress \cite{HicJim16a,JimHic16a,HicEtal17a,RatHic19a,JagHic22a}, error estimates for very high-dimensional problems treated by multi-level QMC is an important open problem.
+QMC simulations are often used to quantify financial risk and quantify the uncertainty in physical phenomena, such as those mentioned above.  We will construct reliable data-based error estimates for QMC, which can serve as stopping criteria for QMC algorithms.  Although PI Hickernell and his collaborators have made some progress \cite{HicJim16a,JimHic16a,HicEtal17a,RatHic19a,JagHic22a}, error estimates for very high-dimensional problems treated by multi-fidelity QMC is an important open problem.
 
 \subsubsection*{Extracting transition phenomena from noisy data}
 Some   stochastic systems are known or partially known (some mechanisms are missing) via noisy observations or simulated data sets. We will  develop techniques to extract stochastic governing laws \cite{Wei2022AnOC, YangLi2020a, Li2022ExtractingGL, Lu2022LearningTT} and then examine transition phenomena by computing mean exit time, escape probability and transition probability density as above. 
@@ -530,8 +534,8 @@ This is the pilot-wave, or hydrodynamical, point of view. We will explore this p
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % The groups of faculty, postdocs, and students corresponding to the three research Thrusts will meet regularly during the academic year and the summer. In addition to the focused research activities on problem-solving, the interactions will include department-wide seminars. The PIs already run a
 Each thrust from Section 2.1 represents new interdisciplinary connections between our faculty, which will be used to strengthen department-wide activities. The PIs already run  research seminars: 
-Stochastic and Multiscale Modeling and Computation seminar for Thrust 11, Nonlinear Algebra and Statistics (NLAStats) and Discrete Math seminars for Thrust 22, and a Computational Mathematics and Statistics seminar for Thrust 33.
-In order to facilitate cross-thematic collaboration, the seminar times will be scheduled to not overlap. 
+Stochastic and Multiscale Modeling and Computation seminar for Thrust 1, Nonlinear Algebra and Statistics (NLAStats) and Discrete Math seminars for Thrust 2, and a Computational Mathematics and Statistics seminar for Thrust 3.
+In order to facilitate cross-thematic collaboration, the seminar times will be scheduled to not overlap. \FredNote{Do we have the right matching of seminars for Thrusts 1 and 3?}
 
 
 %THIS SUBSECTION DESCRIBES *REGULAR* RTG ACTIVITIES, BUT THEN WE ALSO HAVE SUMMER AND OTHER CO-CURRICULAR TRAINING ALL OF WHICH ARE ALSO "OUR ACTIVITIES" SO THIS IS JUST A STUPIDLY ORGANIZED SECTION! THIS REALLY SHOULD NOT BE activities but day-to-day nuts-and-bolts!!! "research activities"!!!
@@ -734,7 +738,7 @@ A public lecture on a topic that falls within the Thrusts of the RTG will be co-
 
 %\marginpar{SHORTEN THIS PARAGRAPH, TEXT CAN BE TIGHTER} This RTG involves BS and PhD students and postdocs, collectively referred to as trainees.  
 The PIs have a track record of mentoring  applied mathematicians at the undergraduate, graduate, and post-graduate level. 
-Our department's faculty have been supervising in-house summer research programs for undergraduate students since the early 2000s; jointly, the PIs and SPs have supervised 16 {\color{red}HOW MANY? Sonja: 12 + Ming: 4 + ... PLEASE FILL IN YOUR NUMBERS!}{
+Our department's faculty have been supervising in-house summer research programs for undergraduate students since the early 2000s; jointly, the PIs and SPs have supervised 16 {\color{red}HOW MANY? Sonja: 12 + Ming: 4 + Fred: 14... PLEASE FILL IN YOUR NUMBERS!}{
 %\color{blue} Ming has supervised 44 UGs at IIT.} **thank you**
 undergraduates in summer research projects. 
 One faculty member has also supervised a high school student conducting research. 
@@ -746,6 +750,7 @@ During the past five years, our department has trained on average 55 BS students
 % PI  Pelsmajer, a racial minority, will lead our effort to  recruit African-American, Hispanic, women and other minority students. !!OMG THIS IS TERRIBLE. Anyway, Michael is SP now. 
 At present, our department has about \numUG BSs, \numPhD PhD students, and \numPostDoc postdocs. 
 {\color{red}Of these, XX \marginpar{Ming?Chun?} are domestic. }
+\FredNote{PhDs}
 
 
 %\subsection*{This needs some work- it is about recruitment. Please edit.} 
