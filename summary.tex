@@ -1,144 +1,46 @@
-
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %    Summary 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[12pt]{article}
+\documentclass[11pt]{NSFamsart}
 
-\oddsidemargin 0.10in \evensidemargin -0.65in
-\textwidth 6.2in         % Width of text line.
-\topmargin 0.60in \headheight 0.0in \headsep 0.0in
-\textheight 8.5in        % Height of text (including footnotes and figures,
-\topskip 0.0in
+%%%%%%%%%%%%%%% Margins and Page Numbers %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\voffset 0.23in  %Made to satisfy Research.gov compliance
+\hoffset 0.01in
+\textheight 8.91in
+\textwidth 6.46in
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength\marginparwidth{60pt}
 
-%  \usepackage{showkeys}
-\usepackage{color}
-\usepackage{amsmath, amssymb, latexsym, natbib}
-\usepackage{psfrag,epsfig,amsfonts,amsmath,latexsym,amsthm,amssymb,amscd,url }
+%\thispagestyle{empty} \pagestyle{empty} %to eliminate page numbers for upload
+\thispagestyle{plain} \pagestyle{plain} %to add back page numbers
 
-
-
-  % \includeonly{description2012}
-  %  \includeonly{ref1009}
-
-
-
-\newcommand{\F}{{\mathcal{F}}}
-\newcommand{\B}{{\mathcal{B}}}
-
-\newcommand{\eps}{\varepsilon}
-
-
-
-\renewcommand{\k}{\kappa}
-\newcommand{\p}{\partial}
-\newcommand{\D}{\Delta}
-\newcommand{\om}{\omega}
-\newcommand{\Om}{\Omega}
-\renewcommand{\phi}{\varphi}
-\newcommand{\e}{\epsilon}
-\renewcommand{\a}{\alpha}
-\renewcommand{\b}{\beta}
-\newcommand{\N}{{\mathbb N}}
-\newcommand{\R}{{\mathbb R}}
-\newcommand{\T}{{\mathbb T}}
-
-\newcommand{\Le}{L_t^{\alpha}}
-
-\newcommand{\EX}{\mathbb{E}}
-\newcommand{\PX}{\mathbb{P}}
-
-
-\newcommand{\grad}{\nabla}
-\newcommand{\n}{\nabla}
-\newcommand{\curl}{\nabla \times}
-\newcommand{\dive}{\nabla \cdot}
-
-\newcommand{\ddt}{\frac{d}{dt}}
-\newcommand{\la}{{\lambda}}
-
-\newcommand{\bu}{\mathbf{u}}
-
-\newcommand{\obu}{\bar{\mathbf{u}}}
-\newcommand{\bsigma}{\mathbf{\sigma}}
-\newcommand{\btau}{\mathbf{\tau}}
-
-
-\newcommand{\nd}{{\nabla \cdot}}
-
-\newcommand{\cF}{{\cal F}}
-\newcommand{\cG}{{\cal G}}
-\newcommand{\cD}{{\cal D}}
-\newcommand{\cO}{{\cal O}}
-
-%%%%%%%%%%%%%%
-
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}{Lemma}
-\newtheorem{definition}{Definition}
- \newtheorem{coro}[lemma]{Corollary}
- \newtheorem{example}[lemma]{Example}
- \newtheorem{remark}[lemma]{Remark}
-
-
-%%%%%%%%%%%%%%% Xu Sun %%%%%%%%%%%%%
-
-
-
-\newcommand{\uk}[1]{\ensuremath{u^{(#1)}(t,\omega)}}
-\newcommand{\hse}{\ensuremath{h^s(\xi,\omega)}}
-\newcommand{\hsk}[1]{\ensuremath{h^{(#1)}(\xi,\omega)}}
-
-\newcommand{\sz}{\ensuremath{ {\int_s^0 z(\theta_r (\omega))\,dr}}}
-\newcommand{\sZ}{\ensuremath{ {\int_s^0 Z(\theta_r (\omega))\,dr}}}
-\newcommand{\zz}[1]{\ensuremath{{z(\theta_{#1} (\omega))}}}
-\newcommand{\ZZ}[1]{\ensuremath{{Z(\theta_{#1} (\omega))}}}
-\newcommand{\fu}[1]{\ensuremath{{F_u^{u_0 (#1)}}}}
-\newcommand{\fus}[2]{\ensuremath{{\int^0_{#2} F_u^{u_0 (#1)}\,d{#1}}}}
-\newcommand{\fuss}[2]{\ensuremath{{\int^{#2}_0 F_u^{u_0 (#1)}\,d{#1}}}}
-
-\newcommand{\fuu}[1]{\ensuremath{{F_{uu}^{u_0(#1)}}}}
-\newcommand{\rb}{\right)}
-\newcommand{\lb}{\left(}
-\newcommand{\rB}{\right]}
-\newcommand{\lB}{\left[}
-
-
-\newcommand{\nb}{\mathbf{n}}
-\newcommand{\ub}{\mathbf{u}}
-\newcommand{\xb}{\mathbf{x}}
-\newcommand{\xnb}{\mathbf{x}_0}
-\newcommand{\GaB}{\mathbf{\Gamma}}
-
-\newcommand{\bo}{\mathcal {O}}
-\newcommand{\so}{\mathcal {o}}
-
-\newcommand{\BE}{\begin{equation}}
-\newcommand{\EE}{\end{equation}}
-\newcommand{\BEN}{\begin{equation*}}
-\newcommand{\EEN}{\end{equation*}}
-\newcommand{\BAL}{\begin{align}}
-\newcommand{\EAL}{\end{align}}
-\newcommand{\BAN}{\begin{align*}}
-\newcommand{\EAN}
-
-
-
-
+%%%%%% Squeeze the space %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%\renewcommand{\baselinestretch}{0.97}
+%%%%%%Squeeze the space %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%
+\headsep-0.6in
+%
 \begin{document}
+%
+\pagestyle{empty}
+%
+\noindent\textbf{\Large{Overview:}} \\
+This RTG at Illinois Institute of Technology involves faculty in applied mathematics, computer science, physics, and biomedical engineering, and collaborates with the nearby NSF Institute for Mathematical and Statistical Innovation (IMSI), Argonne National Laboratory (ANL), and the Chicago Council on Science and Technology (C2ST). \\
 
-{\bf NEEDS TO BE UPDATED OVERALL. } 
+\noindent While the basic undergraduate and graduate level mathematics curriculum provides rigorous quantitative foundation for students, it  generally does not develop the needed ``mathematical maturity'' that students use to integrate these into their own ``creative toolbox''. Developing this maturity is the ultimate goal of this RTG, which we aim to accomplish by providing adequate training that supports a strong, underlying linking theme, ``mathematical foundation of data science", over three aspects: sampling, inference, and dynamics. The proposed project develops  innovative courses, summer programs (REU and summer schools), group discussions, seminars, and workshops, resulting in %is will be conducted via 
+ an integrated research\&teaching training platform, involving NTT and TT faculty, and undergraduate and graduate students. 
+  %interdisciplinary platform involving % integrating research groups that comprise 
+% faculty through undergraduates, innovative courses, summer programs (REU and summer schools), group discussions, seminars, and workshops.  \\
 
-\textbf{Overview:}
-This RTG at Illinois Institute of Technology involves faculty in applied mathematics, computer science, physics, and biomedical engineering, and collaborates with the nearby NSF Institute for Mathematical and Statistical Innovation (IMSI), Argonne National Laboratory (ANL), and the Chicago Council on Science and Technology (C2ST).
+\noindent\textbf{\Large{Intellectual Merit:}} \\
+Data science has become an integral part of scientific development.  It can alleviate various routine experimental tasks, and it can also be used to make accurate and efficient scientific discovery, such as general diffusion law, generative models of image/sound/text, criminology analysis, etc.  It is crucial to understand the mathematical mechanism behind such a powerful tool.  We present three different directions: sampling, inference and dynamics.  The integration of these three important aspects, how data is efficiently sampled, how inference can be done in proper manner under different data sampling schemes, and how dynamics can be used to understand the inference and improve sampling, can help us dive deeper into the mathematical foundation of data science and help build a better mathematical framework for using such a new tool.  Furthermore, our RTG trainees will learn to see the whole puzzle, and not just bits and pieces of one corner. Trainees will actively participate and thus benefit from relevant research and education programs at IMSI, ANL, and C2ST. \\
 
-While the basic undergraduate and graduate level mathematics curriculum provides sophisticated quantitative tools, it  generally does not develop the ``mathematical maturity'' that teaches students to integrate these into a unified ``creative toolbox''. Developing this maturity is the overarching goal of this RTG, which we will accomplish by providing training that supports a strong, underlying linking theme, ``complex dynamical systems". This will be conducted via an interdisciplinary platform that includes research groups that comprise faculty through undergraduates, innovative courses, summer programs, group discussions, seminars, and workshops.  
+\noindent\textbf{\Large{Broader Impacts:}} \\
+This RTG reaches out to the African-American and Hispanic communities in Chicagoland and beyond, and contributes to the development of a diverse workforce with technical maturity and communication skills, ready to enter academia, industry and government. In particular, this RTG simultaneously trains students and postdoctoral fellows to be socially responsible for our environment, health and new energy resources -- with knowledge to better appreciate climate change, new energy, social issues, etc. \\
 
-\textbf{Intellectual Merit:} 
-Complex dynamical systems may be under random influences, far from equilibrium, or operate in quantum regimes. We combine a particle approach (i.e., trajectory and sample path) with a continua approach (i.e., probability density, ensemble, energy, action functional, and wave), with vertically integrated training in stochastic dynamics, multiscale modeling, Monte Carlo methods, scientific computing, neural network approximations, and quantum dynamics.  Our trainees---undergraduate students through postdoctoral fellows---will work together and learn to bring the right kind of quantitative tool to bear as the complex problem demands.  Trainees will learn to see the whole puzzle, and not just bits and pieces of one corner. Trainees will actively participate and thus benefit from relevant research and education programs at IMSI, ANL, and C2ST.
-
-\textbf{Broader Impacts}: 
-This RTG reaches out to the African-American and Hispanic communities in Chicagoland and beyond, and contributes to the development of a diverse workforce with technical maturity and communication skills, ready to enter academia, industry and government. In particular, this RTG simultaneously trains students and postdoctoral fellows to be socially responsible for our environment, health and new energy resources -- with knowledge to better appreciate climate change and rare events, gene mutation and disease, energy efficiency, and data privacy in post-quantum era.   
-
-This vertically integrated training program will involve women, minority and other members of underrepresented groups. Workshops, public lectures, learning innovation experiences, and research findings will be publicly available on the  RTG website, YouTube, GitHub, newsletters and academic journals. Written and oral communication skills will be built by requiring trainees to write to and speak to different audiences: referees for different journals, funding panels, and the general public. It is estimated that about 12 graduate students, 40 undergraduate students and 3 postdoctoral fellows will be involved directly, and all graduate and undergraduate students and faculty members in our department (and related departments) will benefit from this RTG. This RTG will serve as an inspiring model for national STEM  training programs with partnerships between universities, government labs, industry and nonprofits. 
-
+\noindent This vertically integrated training program will involve women, minority and other members of underrepresented groups. Workshops, public lectures, learning innovation experiences, summer undergraduate research experience, summer schools and research findings will be publicly available on the  RTG website, YouTube, GitHub, newsletters and academic journals. Written and oral communication and presentation skills will be built by requiring trainees to write to and speak to different audiences: referees for different journals, funding panels, and the general public.  It is estimated that {\bf ANNUALLY??} about $3$ graduate students, $16$ undergraduate students and $2$ postdoctoral fellows will be involved directly, and all graduate and undergraduate students and faculty members in our department (and related departments) will benefit from this RTG.  This RTG will serve as an inspiring model for national STEM  training programs with partnerships between universities, government labs, industry and nonprofits. 
+%
+\thispagestyle{empty}
+%
 \end{document}
